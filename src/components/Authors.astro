@@ -1,0 +1,22 @@
+---
+export interface Props {
+  authors: string[];
+}
+const { authors } = Astro.props;
+import {alias} from "../content/alias.json";
+---
+
+{
+  authors.map((author,index) => {
+    let a=[];
+    if (alias.includes(author)) {
+      a.push(<b>{author}</b>);
+    } else {
+      a.push(<span>{author}</span>);
+    }
+    if(authors.length!==index+1){
+        a.push(", ");
+    }
+    return a;
+  })
+}

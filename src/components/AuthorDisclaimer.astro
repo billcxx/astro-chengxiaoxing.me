@@ -1,0 +1,19 @@
+---
+import { alias } from "../content/alias.json";
+---
+
+<div>
+  *
+  {
+    alias.map((me, index) => {
+      let a = [];
+      a.push(<span>{me}</span>);
+      if (alias.length !== index + 1) {
+        a.push(", ");
+      }
+      return a;
+    })
+  }
+
+  <span> are all me.</span>
+</div>

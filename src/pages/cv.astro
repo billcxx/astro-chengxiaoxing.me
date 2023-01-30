@@ -1,0 +1,112 @@
+---
+import CVLayout from "../layouts/CVLayout.astro";
+import cv from "../content/cv.json";
+---
+
+<CVLayout title="个人简历">
+  <div>
+    <h2>教育经历</h2>
+    <ul>
+      {
+        cv.education.map((edu) => (
+          <li>
+            <span>
+              {edu.start_date} - {edu.end_date}
+            </span>
+            <span>{edu.school}, </span>
+            <span>{edu.department}, </span>
+            <span>{edu.degree}, </span>
+            <span>{edu.score_type}: </span>
+            <span>{edu.score}</span>
+            {edu.ranking && <span>, 排名: {edu.ranking}</span>}
+            {edu.advisor && <span>, advised by {edu.advisor}</span>}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div>
+    <h2>工作经历</h2>
+    <ul>
+      {
+        cv.jobs.map((job) => (
+          <li>
+            <span>
+              {job.start_date} - {job.end_date},{" "}
+            </span>
+            <span>{job.name}, </span>
+            <span>{job.role} </span>
+            <p>{job.description}</p>
+            <ul>
+              {job.achievements.map((achievement) => (
+                <li>
+                  <span>{achievement}</span>
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div>
+    <h2>项目</h2>
+    <h4>开源类</h4>
+    <table>
+      {
+        cv.opensources.map((software) => (
+          <tr>
+            <td class="align-top w-40" align="right">
+              {software.name}
+            </td>
+            <td class="align-top">{software.description}</td>
+          </tr>
+        ))
+      }
+    </table>
+    <h4>商业类</h4>
+    <table>
+      {
+        cv.commercials.map((software) => (
+          <tr>
+            <td class="align-top w-40" align="right">
+              {software.name}
+            </td>
+            <td class="align-top">{software.description}</td>
+          </tr>
+        ))
+      }
+    </table>
+  </div>
+  <div>
+    <h2>技能树</h2>
+    <h4>语言类</h4>
+    <table>
+      {
+        cv.languages.map((language) => (
+          <tr>
+            <td class="align-top w-40" align="right">
+              {language.name}
+            </td>
+            <td class="align-top">{language.description}</td>
+          </tr>
+        ))
+      }
+    </table>
+    <h4>软件类</h4>
+    <table>
+      {
+        cv.softwares.map((software) => (
+          <tr>
+            <td class="align-top w-40" align="right">
+              {software.name}
+            </td>
+            <td class="align-top">{software.description}</td>
+          </tr>
+        ))
+      }
+    </table>
+  </div>
+</CVLayout>
+
+<style></style>

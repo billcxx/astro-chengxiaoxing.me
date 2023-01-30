@@ -1,0 +1,138 @@
+{
+    "title": "Cheng, Xiaoxing CV",
+    "education": [
+        {
+            "id": "sjtu",
+            "school": "上海交通大学",
+            "department": "材料科学与工程",
+            "score_type": "核心成绩",
+            "score": "90.13/100",
+            "start_date": "2009/09",
+            "end_date": "2013/06",
+            "ranking": "6/140",
+            "degree": "学士"
+        },
+        {
+            "id": "psu",
+            "school": "The Pennsylvania State University",
+            "department": "Materials Science and Engineering",
+            "score_type": "GPA",
+            "score": "3.73/4.00",
+            "start_date": "2013/09",
+            "end_date": "2020/05",
+            "degree": "PhD",
+            "advisor": "Long-Qing Chen"
+        }
+    ],
+    "jobs": [
+        {
+            "id": "mupro",
+            "name": "Mu-PRO LLC",
+            "role": "软件开发人员，唯一员工",
+            "description": "Mu-PRO LLC是由我的博士导师陈龙庆教授在2020年创办的专门开发相场模拟软件的公司。作为Mu-PRO的唯一员工，我负责公司所有事务，从建设公司网站到对老程序进行商业转化，从编写图形界面程序到软件自动化测试发布，从履行订单到后期技术支持。在没有投资的情况下，仅靠销售额支持我全职工作三年，完成所有计划软件的初步开发。",
+            "start_date": "2020/05",
+            "end_date": "至今",
+            "achievements": [
+                "发布MuPRO Ferroelectric服务器版",
+                "发布MuPRO Magnetic服务器版",
+                "发布MuPRO Effective Properties服务器版",
+                "发布MuPRO Effective Properties桌面版",
+                "发布MuPRO Dielectric Breakdown桌面版",
+                "发布MuPRO Impedance桌面版"
+            ]
+        }
+    ],
+    "softwares": [
+        {
+            "id": "admin",
+            "name": "Linux管理员",
+            "description": "搭建并管理一个计算用单节点服务器，一个虚拟化服务器"
+        },
+        {
+            "id": "react",
+            "name": "React",
+            "description": "MuPRO桌面版软件和网页都是用React搭建的的用户界面。"
+        },
+        {
+            "id": "electron",
+            "name": "Electron",
+            "description": "MuPRO桌面版软件就是基于Electron框架的。"
+        },
+        {
+            "id": "astro",
+            "name": "Astro",
+            "description": "本个人网站就是使用vue+nuxt3搭建的。"
+        },
+        {
+            "id": "Qt",
+            "name": "Qt",
+            "description": "MuViz"
+        }
+    ],
+    "languages": [
+        {
+            "id": "cn",
+            "name": "中文",
+            "description": "母语"
+        },
+        {
+            "id": "en",
+            "name": "英文",
+            "description": "熟练"
+        },
+        {
+            "id": "c",
+            "name": "C",
+            "description": "熟练，MuPRO模拟软件的核心语言之一，例如MuPRO Effective Properties桌面版全部是由C编写。"
+        },
+        {
+            "id": "fortran",
+            "name": "Fortran",
+            "description": "熟练，MuPRO模拟软件的核心语言之一，例如所有服务器软件几乎都是由Fortran编写。"
+        },
+        {
+            "id": "cpp",
+            "name": "C++",
+            "description": "普通，曾经使用C++编写Qt+VTK的可视化软件MuViz。"
+        },
+        {
+            "id": "go",
+            "name": "Golang",
+            "description": "普通，LicenseSDK和OpenCAXPlus中的Cli都是用Go写的。"
+        },
+        {
+            "id": "js",
+            "name": "Javascript/Typescript",
+            "description": "普通，MuPRO桌面版是用Typescript写的。"
+        },
+        {
+            "id": "sh",
+            "name": "Shell",
+            "description": "普通，HTPStudio早起版本是完全用Shell脚本写的。"
+        }
+    ],
+    "opensources": [
+        {
+            "id": "muviz",
+            "name": "MuViz",
+            "description": "A special visualization tool for the MuPRO output data."
+        },
+        {
+            "id": "htpstudio",
+            "name": "HTPStudio",
+            "description": "High throughput computation jobs generator"
+        }
+    ],
+    "commercials": [
+        {
+            "id": "phsdk",
+            "name": "Phase-Field SDK",
+            "description": "A parallel phase-field simulation SDK for Intel Fortran on Linux server"
+        },
+        {
+            "id": "phsdk",
+            "name": "Phase-Field Desktop",
+            "description": "A cross platform serial phase-field simulation GUI framework"
+        }
+    ]
+}

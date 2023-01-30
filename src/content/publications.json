@@ -1,0 +1,613 @@
+{
+    "title": "Cheng, Xiaoxing CV",
+    "dissertation": [
+        {
+            "author": [
+                "Cheng, Xiaoxing"
+            ],
+            "year": "2020",
+            "title": "Influence of Defects on Polarization Distribution in Ferroelectrics: A Phase-Field Study",
+            "school": "The Pennsylvania State University",
+            "download": "",
+            "type": "PhD Dissertation"
+        }
+    ],
+    "journals": [
+        {
+            "journal": "Nature Communications",
+            "title": "High-performance piezoelectric composites via β phase programming",
+            "year": "2022",
+            "authors": [
+                "Yuanjie Su",
+                "Weixiong Li",
+                "Xiaoxing Cheng",
+                "Yihao Zhou",
+                "Shuai Yang",
+                "Xu Zhang",
+                "Chunxu Chen",
+                "Tiannan Yang",
+                "Hong Pan",
+                "Guangzhong Xie",
+                "Guorui Chen",
+                "Xun Zhao",
+                "Xiao Xiao",
+                "Bei Li",
+                "Huiling Tai",
+                "Yadong Jiang",
+                "Long-Qing Chen",
+                "Fei Li",
+                "Jun Chen"
+            ]
+        },
+        {
+            "journal": "Small",
+            "title": "Flexoelectric Domain Walls Originated from Structural Phase Transition in Epitaxial BiVO4 Films",
+            "year": "2022",
+            "authors": [
+                "Pao-Wen Shao",
+                "Heng-Jui Liu",
+                "Yuanwei Sun",
+                "Mei Wu",
+                "Ren-Ci Peng",
+                "Meng Wang",
+                "Fei Xue",
+                "Xiaoxing Cheng",
+                "Lei Su",
+                "Peng Gao",
+                "Pu Yu",
+                "Long-Qing Chen",
+                "Xiaoqing Pan",
+                "Yachin Ivry",
+                "Yi-Chun Chen",
+                "Ying-Hao Chu"
+            ]
+        },
+        {
+            "title": "Phase-Field Simulations of Tunable Polar Topologies in Lead-Free Ferroelectric/Paraelectric Multilayers with Ultrahigh Energy-Storage Performance",
+            "journal": "Advanced Materials",
+            "year": "2022",
+            "authors": [
+                "Yiqian Liu",
+                "Junfu Liu",
+                "Hao Pan",
+                "Xiaoxing Cheng",
+                "Zijian Hong",
+                "Ben Xu",
+                "Long-Qing Chen",
+                "Ce-Wen Nan",
+                "Yuan-Hua Lin"
+            ]
+        },
+        {
+            "title": "The role of lattice dynamics in ferroelectric switching",
+            "journal": "Nature Communications",
+            "year": "2022",
+            "authors": [
+                "Xiaoxing Cheng",
+                "Qiwu Shi",
+                "Eric Parsonnet",
+                "Natalya Fedorova",
+                "Ren-Ci Peng",
+                "Abel Fernandez",
+                "Alexander Qualls",
+                "Xiaoxi Huang",
+                "Xue Chang",
+                "Hongrui Zhang",
+                "David Pesquera",
+                "Sujit Das",
+                "Dmitri Nikonov",
+                "Ian Young",
+                "Long-Qing Chen",
+                "Lane W Martin",
+                "Yen-Lin Huang",
+                "Jorge Íñiguez",
+                "Ramamoorthy Ramesh"
+            ]
+        },
+        {
+            "title": "Boundary conditions manipulation of polar vortex domains in BiFeO3 membranes via phase-field simulations",
+            "journal": "Journal of Physics D: Applied Physics",
+            "year": "2022",
+            "authors": [
+                "Xiaoxing Cheng",
+                "Ren-Ci Peng",
+                "Bin Peng",
+                "Ziyao Zhou",
+                "Long-Qing Chen",
+                "Ming Liu"
+            ]
+        },
+        {
+            "title": "Designing polymer nanocomposites with high energy density using machine learning",
+            "journal": "npj Computational Materials",
+            "year": "2021",
+            "authors": [
+                "Zhong-Hui Shen",
+                "Zhi-Wei Bao",
+                "Xiao-Xing Cheng",
+                "Bao-Wen Li",
+                "Han-Xing Liu",
+                "Yang Shen",
+                "Long-Qing Chen",
+                "Xiao-Guang Li",
+                "Ce-Wen Nan"
+            ]
+        },
+        {
+            "title": "Domain patterns and super-elasticity of freestanding BiFeO3 membranes via phase-field simulations",
+            "journal": "Acta Materialia",
+            "year": "2021",
+            "authors": [
+                "Xiaoxing Cheng",
+                "Ren-Ci Peng",
+                "Bin Peng",
+                "Ziyao Zhou",
+                "Long-Qing Chen",
+                "Ming Liu"
+            ]
+        },
+        {
+            "title": "Dislocation-induced large local polarization inhomogeneity of ferroelectric materials",
+            "journal": "Scripta Materialia",
+            "year": "2021",
+            "authors": [
+                "Ning Li",
+                "Ruixue Zhu",
+                "Xiaoxing Cheng",
+                "Heng-Jui Liu",
+                "Zhangyuan Zhang",
+                "Yen-Lin Huang",
+                "Ying-Hao Chu",
+                "Long-Qing Chen",
+                "Yuichi Ikuhara",
+                "Peng Gao"
+            ]
+        },
+        {
+            "title": "Ultrasensitive magnetostrictive responses at the pre-transitional rhombohedral side of ferromagnetic morphotropic phase boundary",
+            "journal": "Journal of Materials Science",
+            "year": "2021",
+            "authors": [
+                "Cheng-Chao Hu",
+                "Zhao Zhang",
+                "Xiao-Xing Cheng",
+                "Hou-Bing Huang",
+                "Yang-Guang Shi",
+                "Long-Qing Chen"
+            ]
+        },
+        {
+            "title": "High-throughput data-driven interface design of high-energy-density polymer nanocomposites",
+            "journal": "Journal of Materiomics",
+            "year": "2020",
+            "authors": [
+                "Zhong-Hui Shen",
+                "Yang Shen",
+                "Xiao-Xing Cheng",
+                "Han-Xing Liu",
+                "Long-Qing Chen",
+                "Ce-Wen Nan"
+            ]
+        },
+        {
+            "title": "Phase transition enhanced superior elasticity in freestanding single-crystalline multiferroic BiFeO3 membranes",
+            "journal": "Science advances",
+            "year": "2020",
+            "authors": [
+                "Bin Peng",
+                "Ren-Ci Peng",
+                "Yong-Qiang Zhang",
+                "Guohua Dong",
+                "Ziyao Zhou",
+                "Yuqing Zhou",
+                "Tao Li",
+                "Zhijie Liu",
+                "Zhenlin Luo",
+                "Shaohao Wang",
+                "Yan Xia",
+                "Ruibin Qiu",
+                "Xiaoxing Cheng",
+                "Fei Xue",
+                "Zhongqiang Hu",
+                "Wei Ren",
+                "Zuo-Guang Ye",
+                "Long-Qing Chen",
+                "Zhiwei Shan",
+                "Tai Min",
+                "Ming Liu"
+            ]
+        },
+        {
+            "title": "Unexpected Giant Microwave Conductivity in a Nominally Silent BiFeO3 Domain Wall",
+            "journal": "Advanced Materials",
+            "year": "2020",
+            "authors": [
+                "Xiaoxing Cheng",
+                "Yen-Lin Huang",
+                "Lu Zheng",
+                "Peng Chen",
+                " Shang-Lin Hsu",
+                "Tiannan Yang",
+                "Xiaoyu Wu",
+                "Louis Ponet",
+                "Ramamoorthy Ramesh",
+                "Long-Qing Chen",
+                "Sergey Artyukhin",
+                "Ying-Hao Chu",
+                "Keji Lai"
+            ]
+        },
+        {
+            "title": "Thermodynamic and phase-field studies of phase transitions, domain structures, and switching for Ba (ZrxTi1-x) O3 solid solutions",
+            "journal": "Acta Materialia",
+            "year": "2020",
+            "authors": [
+                "Yu Hui Huang",
+                "Jian-Jun Wang",
+                "Tian Nan Yang",
+                "Xiao Xing Cheng",
+                "Bing Liu",
+                "Yong Jun Wu",
+                "Long-Qing Chen"
+            ]
+        },
+        {
+            "title": "Phase field simulation of grain size effects on the phase coexistence and magnetostrictive behavior near the ferromagnetic morphotropic phase boundary",
+            "journal": "Applied physics letters",
+            "year": "2019",
+            "authors": [
+                "Cheng-Chao Hu",
+                "Zhao Zhang",
+                "Tian-Nan Yang",
+                "Yang-Guang Shi",
+                "Xiao-Xing Cheng",
+                "Jun-Jie Ni",
+                "Ji-Gong Hao",
+                "Wei-Feng Rao",
+                "Long-Qing Chen"
+            ]
+        },
+        {
+            "title": "Observation of strong polarization enhancement in ferroelectric tunnel junctions",
+            "journal": "Nano letters",
+            "year": "2019",
+            "authors": [
+                "Linze Li",
+                "Xiaoxing Cheng",
+                "Thomas Blum",
+                "Huaixun Huyan",
+                "Yi Zhang",
+                "Colin Heikes",
+                "Xingxu Yan",
+                "Chaitanya Gadre",
+                "Toshihiro Aoki",
+                "Mingjie Xu",
+                "Lin Xie",
+                "Zijian Hong",
+                "Carolina Adamo",
+                "Darrell G Schlom",
+                "Long-Qing Chen",
+                "Xiaoqing Pan"
+            ]
+        },
+        {
+            "title": "Intrinsic Conductance of Domain Walls in BiFeO3",
+            "journal": "Advanced Materials",
+            "year": "2019",
+            "authors": [
+                "Yi Zhang",
+                "Haidong Lu",
+                "Xingxu Yan",
+                "Xiaoxing Cheng",
+                "Lin Xie",
+                "Toshihiro Aoki",
+                "Linze Li",
+                "Colin Heikes",
+                "Shu Ping Lau",
+                "Darrell G Schlom",
+                "Longqing Chen",
+                "Alexei Gruverman",
+                "Xiaoqing Pan"
+            ]
+        },
+        {
+            "title": "Conformational domain wall switch",
+            "journal": "Advanced Functional Materials",
+            "year": "2019",
+            "authors": [
+                "Pankaj Sharma",
+                "Daniel Sando",
+                "Qi Zhang",
+                "Xiaoxing Cheng",
+                "Sergey Prosandeev",
+                "Ralph Bulanadi",
+                "Sergei Prokhorenko",
+                "Laurent Bellaiche",
+                "Long-Qing Chen",
+                "Valanoor Nagarajan",
+                "Jan Seidel"
+            ]
+        },
+        {
+            "title": "In Situ TEM Study on the Sympathetic Nucleation of Austenite Precipitates",
+            "journal": "Acta Metall Sin",
+            "year": "2019",
+            "authors": [
+                "Juan DU",
+                "Xiaoxing CHENG",
+                "Tiannan YANG",
+                "Longqing CHEN",
+                "Frédéric Mompiou",
+                "Wenzheng ZHANG"
+            ]
+        },
+        {
+            "title": "Switching the chirality of a magnetic vortex deterministically with an electric field",
+            "journal": "Materials Research Letters",
+            "year": "2018",
+            "authors": [
+                "Ren-Ci Peng",
+                "Jia-Mian Hu",
+                "Tiannan Yang",
+                "Xiaoxing Cheng",
+                "Jian-Jun Wang",
+                "Hou-Bing Huang",
+                "Long-Qing Chen",
+                "Ce-Wen Nan"
+            ]
+        },
+        {
+            "title": "Anisotropic polarization-induced conductance at a ferroelectric-insulator interface",
+            "journal": "Nature nanotechnology",
+            "year": "2018",
+            "authors": [
+                "Yi Zhang",
+                "Haidong Lu",
+                "Lin Xie",
+                "Xingxu Yan",
+                "Tula R Paudel",
+                "Jeongwoo Kim",
+                "Xiaoxing Cheng",
+                "Hui Wang",
+                "Colin Heikes",
+                "Linze Li",
+                "Mingjie Xu",
+                "Darrell G Schlom",
+                "Long-Qing Chen",
+                "Ruqian Wu",
+                "Evgeny Y Tsymbal",
+                "Alexei Gruverman",
+                "Xiaoqing Pan"
+            ]
+        },
+        {
+            "title": "Understanding and predicting geometrical constraint ferroelectric charged domain walls in a BiFeO3 island via phase-field simulations",
+            "journal": "Applied Physics Letters",
+            "year": "2018",
+            "authors": [
+                "Ren-Ci Peng",
+                "Xiaoxing Cheng",
+                "Ji Ma",
+                "Houbing Huang",
+                "Jing Ma",
+                "Long-Qing Chen",
+                "Ce-Wen Nan"
+            ]
+        },
+        {
+            "title": "Strain effects on domain structures in ferroelectric thin films from phase-field simulations",
+            "journal": "Journal of the American Ceramic Society",
+            "year": "2018",
+            "authors": [
+                "Fang-Yin Lin",
+                "Xiaoxing Cheng",
+                "Long-Qing Chen",
+                "Susan B Sinnott"
+            ]
+        },
+        {
+            "title": "Controllable conductive readout in self-assembled, topologically confined ferroelectric domain walls",
+            "journal": "Nature nanotechnology",
+            "year": "2018",
+            "authors": [
+                "Ji Ma",
+                "Jing Ma",
+                "Qinghua Zhang",
+                "Renci Peng",
+                "Jing Wang",
+                "Chen Liu",
+                "Meng Wang",
+                "Ning Li",
+                "Mingfeng Chen",
+                "Xiaoxing Cheng",
+                "Peng Gao",
+                "Lin Gu",
+                "Long-Qing Chen",
+                "Pu Yu",
+                "Jinxing Zhang",
+                "Ce-Wen Nan"
+            ]
+        },
+        {
+            "title": "Control of domain structures in multiferroic thin films through defect engineering",
+            "journal": "Advanced Materials",
+            "year": "2018",
+            "authors": [
+                "Linze Li",
+                "Jacob R Jokisaari",
+                "Yi Zhang",
+                "Xiaoxing Cheng",
+                "Xingxu Yan",
+                "Colin Heikes",
+                "Qiyin Lin",
+                "Chaitanya Gadre",
+                "Darrell G Schlom",
+                "Long-Qing Chen",
+                "Xiaoqing Pan"
+            ]
+        },
+        {
+            "title": "Hierarchical Domain Structure and Extremely Large Wall Current in Epitaxial BiFeO3 Thin Films",
+            "journal": "Advanced Functional Materials",
+            "year": "2018",
+            "authors": [
+                "Zi Long Bai","Xiao Xing Cheng","Dong Fang Chen","David Wei Zhang","Long-Qing Chen","James F Scott","Cheol Seong Hwang","An Quan Jiang"
+            ]
+        },
+        {
+            "title": "Effect of cooling rates on the dendritic morphology transition of Mg-6Gd alloy by in situ X-ray radiography",
+            "journal": "Journal of materials science & technology",
+            "year": "2018",
+            "authors": [
+                "Yongbiao Wang",
+                "Liming Peng",
+                "Yanzhou Ji",
+                "Xiaoxing Cheng",
+                "Cunlong Wang",
+                "Yujuan Wu",
+                "Yanan Fu",
+                "Long-Qing Chen"
+            ]
+        },
+        {
+            "title": "Atomic-scale mechanism of internal structural relaxation screening at polar interfaces",
+            "journal": "Physical Review B",
+            "year": "2018",
+            "authors": [
+                "Mingqiang Li",
+                "Xiaoxing Cheng",
+                "Ning Li",
+                "Heng-Jui Liu",
+                "Yen-Lin Huang",
+                "Kaihui Liu",
+                "Ying-Hao Chu",
+                "Dapeng Yu",
+                "Long-Qing Chen",
+                "Yuichi Ikuhara",
+                "Peng Gao"
+            ]
+        },
+        {
+            "title": "Defect-induced hedgehog polarization states in multiferroics",
+            "journal": "Physical review letters",
+            "year": "2018",
+            "authors": [
+                "Linze Li",
+                "Xiaoxing Cheng",
+                "Jacob R Jokisaari",
+                "Peng Gao",
+                "Jason Britson",
+                "Carolina Adamo",
+                "Colin Heikes",
+                "Darrell G Schlom",
+                "Long-Qing Chen",
+                "Xiaoqing Pan"
+            ]
+        },
+        {
+            "title": "Phase-Field Based Multiscale Modeling of Heterogeneous Solid Electrolytes: Applications to Nanoporous Li3PS4",
+            "journal": "ACS applied materials & interfaces",
+            "year": "2017",
+            "authors": [
+                "Jia-Mian Hu",
+                "Bo Wang",
+                "Yanzhou Ji",
+                "Tiannan Yang",
+                "Xiaoxing Cheng",
+                "Yi Wang",
+                "Long-Qing Chen"
+            ]
+        },
+        {
+            "title": "V2O5 Nanowire Composite Paper as a High-Performance Lithium-Ion Battery Cathode",
+            "journal": "ACS omega",
+            "year": "2017",
+            "authors": [
+                "Yue Zhang",
+                "Yizhi Wang",
+                "Zhihong Xiong",
+                "Yongming Hu",
+                "Weixing Song",
+                "Qiu-an Huang",
+                "Xiaoxing Cheng",
+                "Long-Qing Chen",
+                "Chunwen Sun",
+                "Haoshuang Gu"
+            ]
+        },
+        {
+            "title": "Fast magnetic domain-wall motion in a ring-shaped nanowire driven by a voltage",
+            "journal": "Nano letters",
+            "year": "2017",
+            "authors": [
+                "Jia-Mian Hu",
+                "Tiannan Yang",
+                "Kasra Momeni",
+                "Xiaoxing Cheng",
+                "Lei Chen",
+                "Shiming Lei",
+                "Shujun Zhang",
+                "Susan Trolier-McKinstry",
+                "Venkatraman Gopalan",
+                "Gregory P Carman",
+                "Ce-Wen Nan",
+                "Long-Qing Chen"
+            ]
+        },
+        {
+            "title": "The effect of low cooling rates on dendrite morphology during directional solidification in Mg-Gd alloys: In situ X-ray radiographic observation",
+            "journal": "Materials Letters",
+            "year": "2016",
+            "authors": [
+                "Yongbiao Wang",
+                "Liming Peng",
+                "Yanzhou Ji",
+                "Xiaoxing Cheng",
+                "Nan Wang",
+                "Yan Zhao",
+                "Yanan Fu",
+                "Long-Qing Chen",
+                "Wenjiang Ding"
+            ]
+        },
+        {
+            "title": "Electroelastic fields in artificially created vortex cores in epitaxial BiFeO3 thin films",
+            "journal": "Applied Physics Letters",
+            "year": "2016",
+            "authors": [
+                "Ben Winchester",
+                "Nina Balke",
+                "XX Cheng",
+                "AN Morozovska",
+                "Sergei Kalinin",
+                "LQ Chen"
+            ]
+        }
+    ],
+    "books": [
+        {
+            "title": "Metal Matrix Composites: Materials, Manufacturing and Engineering",
+            "year": "2014",
+            "authors": [
+                "Igor Batraev",
+                "Saurabh Chaitanya",
+                "Xiaoxing Cheng",
+                "Dina V Dudina",
+                "Vijayan Krishnaraj",
+                "Ravinder Kumar",
+                "Yue Li",
+                "Weijie Lu",
+                "Alakesh Manna",
+                "José Miguel Molina Jordá",
+                "K Palanikumar",
+                "Jining Qin",
+                "Nuno Silvestre",
+                "Inderdeep Singh",
+                "Vladimir Ulianitsky",
+                "Liqiang Wang",
+                "Di Zhang",
+                "Fan Zhang"
+            ]
+        }
+    ]
+}
