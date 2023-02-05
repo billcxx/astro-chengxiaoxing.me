@@ -1,8 +1,6 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-
 export interface Props {
-  articles: CollectionEntry<'projects'>[];
+  articles: any[];
   path: string;
 }
 
@@ -14,16 +12,16 @@ const { articles, path } = Astro.props;
     articles.map((article) => (
       <li class="article-item">
         <h1 class="text-xl">
-          <a href={`/${path}/${article.slug}`}>{article.data.title}</a>
+          <a href={`/${path}/${article.slug}`}>{article.frontmatter.title}</a>
         </h1>
         <p>
-          <time datetime={article.data.publishDate.toString()}>
-            {article.data.publishDate.toDateString()}
+          <time datetime={article.frontmatter.publishDate.toString()}>
+            {article.frontmatter.publishDate.toString()}
           </time>
         </p>
-        <p>{article.data.description}</p>
+        <p>{article.frontmatter.description}</p>
         <ul class="article-tags">
-          {article.data.tags.map((tag: string) => (
+          {article.frontmatter.tags.map((tag: string) => (
             <li class="tag">{tag}</li>
           ))}
         </ul>
