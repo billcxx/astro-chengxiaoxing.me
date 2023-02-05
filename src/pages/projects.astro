@@ -1,24 +1,20 @@
 ---
 import ProjectsListLayout from "../layouts/ProjectsListLayout.astro";
 import { getCollection } from "astro:content";
+import Card from "../components/Card.astro";
+import Tags from "../components/Tags.astro";
+import ArticleList from "../components/ArticleList.astro";
 // Get all entries from a collection. Requires the name of the collection as an argument.
 const allProjects = await getCollection("projects");
+const allPosts = await Astro.glob('../content/projects/*.md');
+const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+// const { posts } = Astro.props;
 ---
 
 <ProjectsListLayout title="All projects">
-  <ul>
-    {
-      allProjects.map((project) => (
-        <li>
-          <a href={`/my-blog-url/${project.slug}`}>{project.data.title}</a>
-          <time datetime={project.data.publishDate.toString()}>
-            {project.data.publishDate.toDateString()}
-          </time>
-          <p>{project.data.description}</p>
-        </li>
-      ))
-    }
-  </ul>
+  <Tags folder="projects"/>
+
+  <ArticleList articles={allProjects} path="projects"/>
 </ProjectsListLayout>
 
 <style>
