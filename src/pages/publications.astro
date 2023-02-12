@@ -1,24 +1,22 @@
 ---
 import PublicationsLayout from "../layouts/PublicationsLayout.astro";
 import publications from "../content/publications.json";
-import Authors from "../components/Authors.astro";
 import AuthorDisclaimer from "../components/AuthorDisclaimer.astro";
+import PublicationItem from "../components/PublicationItem.astro";
 ---
 
 <PublicationsLayout title="论文发表">
-    <AuthorDisclaimer/>
+  <AuthorDisclaimer />
   <div>
     <h3>学位论文</h3>
     <ul>
       {
         publications.dissertation.map((dissertation, index) => (
-          <ol>
-            <span class="w-8 inline-block">{index + 1}.</span>
-            <Authors authors={dissertation.author} />.
-            <span class="italic">{dissertation.title}</span>.
-            <span>{dissertation.school}</span>,
-            <span>{dissertation.year}</span>
-          </ol>
+          <PublicationItem
+            type="dissertation"
+            publication={dissertation}
+            index={index}
+          />
         ))
       }
     </ul>
@@ -28,15 +26,7 @@ import AuthorDisclaimer from "../components/AuthorDisclaimer.astro";
     <ul>
       {
         publications.journals.map((journal, index) => (
-          <ol>
-            <span class="w-8 inline-block">{index + 1}.</span>
-            <Authors authors={journal.authors}/>.
-            <span>"{journal.title}</span>",
-            <span class="inline-block italic font-semibold">
-              {journal.journal}
-            </span>
-            <span>({journal.year})</span>.
-          </ol>
+          <PublicationItem type="journal" publication={journal} index={index} />
         ))
       }
     </ul>
@@ -46,12 +36,7 @@ import AuthorDisclaimer from "../components/AuthorDisclaimer.astro";
     <ul>
       {
         publications.books.map((book, index) => (
-          <ol>
-            <span class="w-8 inline-block">{index + 1}.</span>
-            <span>{book.title}</span>,
-            <span>({book.year})</span>,
-            <Authors authors={book.authors}/>
-          </ol>
+          <PublicationItem type="book" publication={book} index={index} />
         ))
       }
     </ul>

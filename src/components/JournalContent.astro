@@ -1,0 +1,15 @@
+---
+import type { JournalType } from "./type";
+export type Props = JournalType;
+const { authors, title, journal, year } = Astro.props;
+import Authors from "../components/Authors.astro";
+---
+
+<>
+  <Authors authors={authors} />.
+  <span>"{title}</span>",
+  <span class="inline-block italic font-semibold">
+    {journal}
+  </span>
+  <span>({year})</span>.
+</>

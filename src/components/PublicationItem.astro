@@ -1,0 +1,94 @@
+---
+import DissertationContent from "./DissertationContent.astro";
+import JournalContent from "./JournalContent.astro";
+import BookContent from "./BookContent.astro";
+import type { DissertationType, JournalType, BookType } from "./type";
+
+interface dissertation {
+  publication: DissertationType;
+  type: "dissertation";
+  index?: number;
+}
+
+interface journal {
+  publication: JournalType;
+  type: "journal";
+  index?: number;
+}
+
+interface book {
+  publication: BookType;
+  type: "book";
+  index?: number;
+}
+
+export type Props = dissertation | journal | book;
+const { publication, type, index } = Astro.props;
+---
+
+{
+  type === "dissertation" ? (
+    index !== undefined ? (
+      <ol>
+        <span class="w-8 inline-block">{index + 1}.</span>
+        <DissertationContent
+          author={publication.author}
+          year={publication.year}
+          school={publication.school}
+          title={publication.title}
+        />
+      </ol>
+    ) : (
+      <DissertationContent
+        author={publication.author}
+        year={publication.year}
+        school={publication.school}
+        title={publication.title}
+      />
+    )
+  ) : null
+}
+
+{
+  type === "journal" ? (
+    index !== undefined ? (
+      <ol>
+        <span class="w-8 inline-block">{index + 1}.</span>
+        <JournalContent
+          authors={publication.authors}
+          year={publication.year}
+          journal={publication.journal}
+          title={publication.title}
+        />
+      </ol>
+    ) : (
+      <JournalContent
+        authors={publication.authors}
+        year={publication.year}
+        journal={publication.journal}
+        title={publication.title}
+      />
+    )
+  ) : null
+}
+
+{
+  type === "book" ? (
+    index !== undefined ? (
+      <ol>
+        <span class="w-8 inline-block">{index + 1}.</span>
+        <BookContent
+          authors={publication.authors}
+          year={publication.year}
+          title={publication.title}
+        />
+      </ol>
+    ) : (
+      <BookContent
+        authors={publication.authors}
+        year={publication.year}
+        title={publication.title}
+      />
+    )
+  ) : null
+}

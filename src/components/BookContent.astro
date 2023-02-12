@@ -1,0 +1,12 @@
+---
+import type { BookType } from "./type";
+export type Props = BookType;
+const { authors, title, year } = Astro.props;
+import Authors from "../components/Authors.astro";
+---
+
+<>
+  <span>{title}</span>,
+  <span>({year})</span>,
+  <Authors authors={authors} />
+</>

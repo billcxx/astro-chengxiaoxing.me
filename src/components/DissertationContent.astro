@@ -1,0 +1,12 @@
+---
+import type { DissertationType } from "./type";
+export type Props = DissertationType;
+const { author, title, school, year } = Astro.props;
+import Authors from "../components/Authors.astro";
+---
+
+<>
+  <Authors authors={author} />.
+  <span class="italic">{title}</span>.
+  <span>{school}</span>,<span>{year}</span>
+</>
