@@ -1,0 +1,17 @@
+---
+export interface Props{
+    project: {
+        name: string;
+        date: string;
+        status: string;
+        description: string;
+    },
+}
+const {project}=Astro.props;
+---
+
+<li>
+    <span>{project.name}</span>， <span>{project.date}</span>，
+    <span>{project.status}</span>
+    <p class="mt-0">{project.description}</p>
+</li>

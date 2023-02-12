@@ -1,30 +1,12 @@
 ---
 import CVLayout from "../layouts/CVLayout.astro";
 import cv from "../content/cv.json";
+import projects from "../content/projects.json";
+import ProjectItem from "../components/ProjectItem.astro";
+
 ---
 
 <CVLayout title="个人简历">
-  <div>
-    <h2>教育经历</h2>
-    <ul>
-      {
-        cv.education.map((edu) => (
-          <li>
-            <span>
-              {edu.start_date} - {edu.end_date}
-            </span>
-            <span>{edu.school}, </span>
-            <span>{edu.department}, </span>
-            <span>{edu.degree}, </span>
-            <span>{edu.score_type}: </span>
-            <span>{edu.score}</span>
-            {edu.ranking && <span>, 排名: {edu.ranking}</span>}
-            {edu.advisor && <span>, advised by {edu.advisor}</span>}
-          </li>
-        ))
-      }
-    </ul>
-  </div>
   <div>
     <h2>工作经历</h2>
     <ul>
@@ -36,10 +18,10 @@ import cv from "../content/cv.json";
             </span>
             <span>{job.name}, </span>
             <span>{job.role} </span>
-            <p>{job.description}</p>
-            <ul>
+            <p class="mt-0 mb-0">{job.description}</p>
+            <ul class="mt-0">
               {job.achievements.map((achievement) => (
-                <li>
+                <li class="mt-0 mb-0">
                   <span>{achievement}</span>
                 </li>
               ))}
@@ -50,63 +32,91 @@ import cv from "../content/cv.json";
     </ul>
   </div>
   <div>
-    <h2>项目</h2>
-    <h4>开源类</h4>
-    <table>
-      {
-        cv.opensources.map((software) => (
-          <tr>
-            <td class="align-top w-40" align="right">
-              {software.name}
-            </td>
-            <td class="align-top">{software.description}</td>
-          </tr>
-        ))
-      }
-    </table>
-    <h4>商业类</h4>
-    <table>
-      {
-        cv.commercials.map((software) => (
-          <tr>
-            <td class="align-top w-40" align="right">
-              {software.name}
-            </td>
-            <td class="align-top">{software.description}</td>
-          </tr>
-        ))
-      }
-    </table>
+    <h2>项目经历</h2>
+    <p>
+      我的项目经历主要是与物理和材料领域的计算机模拟相关，包含建模、编程、可视化、商业化等方向。由于项目较多，这里我只列举两个近期的主要项目，完整列表请参考
+      <a href="projects">项目页面</a>。
+    </p>
+    <ul>
+      <ProjectItem project={projects.softwares.ocp}/>
+      <ProjectItem project={projects.softwares.pfsdk}/>
+    </ul>
   </div>
   <div>
-    <h2>技能树</h2>
-    <h4>语言类</h4>
-    <table>
-      {
-        cv.languages.map((language) => (
-          <tr>
-            <td class="align-top w-40" align="right">
-              {language.name}
-            </td>
-            <td class="align-top">{language.description}</td>
-          </tr>
-        ))
-      }
-    </table>
-    <h4>软件类</h4>
-    <table>
-      {
-        cv.softwares.map((software) => (
-          <tr>
-            <td class="align-top w-40" align="right">
-              {software.name}
-            </td>
-            <td class="align-top">{software.description}</td>
-          </tr>
-        ))
-      }
-    </table>
+    <h2>基金及科研经历</h2>
+    <p class="mb-0">
+      我的博士主要研究方向就是铁电材料相场模拟。具体科研项目太多，暂时不列举了，大部分工作发表了论文，可以参考
+      <a href="publications">我的论文发表</a>。 经费来自于以下两个项目：
+    </p>
+    <ul class="mt-0">
+      <li class="mt-0 mb-0">
+        DOE DE-FG02-07ER46417, 2013 - 2019, Structure and Dynamics of Domains in
+        Ferroelectric Nanostructures – Phase-field Modeling
+      </li>
+      <li class="mt-0 mb-0">
+        DOE DE-DE-SC0020145, 2019 - 2020, Computational Mesoscale Science and
+        Open Software for Quantum Materials
+      </li>
+    </ul>
+    <p>
+      本科参与过众多科研，主要围绕着金属材料展开。其中参与的用于生物材料的&beta;钛合金研究，虽然没有发表论文，但是最终负责编写了出版书中的一章，具体参见
+      <a href="publications">论文中书籍的部分</a>。
+    </p>
+    <div>
+      <h2>教育经历</h2>
+      <ul>
+        {
+          cv.education.map((edu) => (
+            <li>
+              <span>
+                {edu.start_date} - {edu.end_date}
+              </span>
+              <span>{edu.school}, </span>
+              <span>{edu.department}, </span>
+              <span>{edu.degree}, </span>
+              <span>{edu.score_type}: </span>
+              <span>{edu.score}</span>
+              {edu.ranking && <span>, 排名: {edu.ranking}</span>}
+              {edu.advisor && <span>, advised by {edu.advisor}</span>}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div>
+      <h2>技能树</h2>
+      <h4>语言类</h4>
+      <table>
+        <tbody>
+          {
+            cv.languages.map((language) => (
+              <tr>
+                <td class="align-top w-40" align="right">
+                  {language.name}
+                </td>
+                <td class="align-top">{language.description}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h4>软件类</h4>
+      <table>
+        <tbody>
+          {
+            cv.softwares.map((software) => (
+              <tr>
+                <td class="align-top w-40" align="right">
+                  {software.name}
+                </td>
+                <td class="align-top">{software.description}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
   </div>
 </CVLayout>
-
-<style></style>

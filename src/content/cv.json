@@ -2,6 +2,17 @@
     "title": "Cheng, Xiaoxing CV",
     "education": [
         {
+            "id": "psu",
+            "school": "The Pennsylvania State University",
+            "department": "Materials Science and Engineering",
+            "score_type": "GPA",
+            "score": "3.73/4.00",
+            "start_date": "2013/09",
+            "end_date": "2020/05",
+            "degree": "PhD",
+            "advisor": "Long-Qing Chen"
+        },
+        {
             "id": "sjtu",
             "school": "上海交通大学",
             "department": "材料科学与工程",
@@ -13,15 +24,14 @@
             "degree": "学士"
         },
         {
-            "id": "psu",
-            "school": "The Pennsylvania State University",
+            "id": "uiuc",
+            "school": "University of Illinois at Urbana & Champaign",
             "department": "Materials Science and Engineering",
-            "score_type": "GPA",
-            "score": "3.73/4.00",
-            "start_date": "2013/09",
-            "end_date": "2020/05",
-            "degree": "PhD",
-            "advisor": "Long-Qing Chen"
+            "score_type": "Grade",
+            "score": "A",
+            "start_date": "2011/07",
+            "end_date": "2011/08",
+            "degree": "Summer school"
         }
     ],
     "jobs": [
@@ -109,30 +119,6 @@
             "id": "sh",
             "name": "Shell",
             "description": "普通，HTPStudio早起版本是完全用Shell脚本写的。"
-        }
-    ],
-    "opensources": [
-        {
-            "id": "muviz",
-            "name": "MuViz",
-            "description": "A special visualization tool for the MuPRO output data."
-        },
-        {
-            "id": "htpstudio",
-            "name": "HTPStudio",
-            "description": "High throughput computation jobs generator"
-        }
-    ],
-    "commercials": [
-        {
-            "id": "phsdk",
-            "name": "Phase-Field SDK",
-            "description": "A parallel phase-field simulation SDK for Intel Fortran on Linux server"
-        },
-        {
-            "id": "phsdk",
-            "name": "Phase-Field Desktop",
-            "description": "A cross platform serial phase-field simulation GUI framework"
         }
     ]
 }

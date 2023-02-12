@@ -1,0 +1,46 @@
+{
+    "softwares": {
+        "ocp": {
+            "id": "ocp",
+            "name": "OpenCAXPlus",
+            "date": "始于2022",
+            "status": "开发中",
+            "description": "跨平台开源CAX+AI软件开发工具"
+        },
+        "pfsdk": {
+            "id": "phsdk",
+            "name": "MuPRO PhaseFieldSDK",
+            "date": "始于2022",
+            "status": "beta版",
+            "description": "针对Linux服务器的，MPI并行计算相场软件开发工具包。"
+        },
+        "pfdesktop": {
+            "id": "phdesktop",
+            "name": "Phase-Field Desktop",
+            "date": "始于2021",
+            "status": "已发布",
+            "description": "针对个人电脑的跨平台计算软件。图形界面使用Reactjs+Electronjs，后台使用了Fortran+C/C++完成串行计算。现有三款软件，介电击穿路径模拟，非均匀体系有效性质计算，和非均匀体系阻抗计算。"
+        },
+        "mupro-v1.0.6": {
+            "id": "mupro-v1.0.6",
+            "name": "MuPRO Phase Field modules",
+            "date": "2019 - 2022",
+            "status": "v1.0.6 LTS",
+            "description": "针对Linux服务器的，MPI并行计算软件。已有三款软件，包括铁电相场模拟，微磁学模拟，非均匀体系有效性质计算。"
+        },
+        "muviz": {
+            "id": "muviz",
+            "name": "MuViz",
+            "date": "2016 夏天",
+            "status": "组内使用，alpha版",
+            "description": "基于Qt和VTK的3D数据可视化的软件，实现了针对组内铁电、铁磁、有效性质模拟数据的Paraview在畴结构可视化方面的不足。"
+        },
+        "htpstudio": {
+            "id": "htpstudio",
+            "name": "HTPStudio",
+            "date": "2018",
+            "status": "组内使用，alpha release",
+            "description": "基于shell脚本的命令行工具。用于自动生成高通量任务矩阵，提交计算任务或完成统一操作。"
+        }
+    }
+}
