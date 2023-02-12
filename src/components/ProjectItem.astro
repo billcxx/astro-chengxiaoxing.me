@@ -1,17 +1,29 @@
 ---
-export interface Props{
-    project: {
-        name: string;
-        date: string;
-        status: string;
-        description: string;
-    },
+export interface Props {
+  project: {
+    name: string;
+    date: string;
+    status: string;
+    description: string;
+  };
+  index?: number;
 }
-const {project}=Astro.props;
+const { project } = Astro.props;
 ---
 
-<li>
-    <span>{project.name}</span>， <span>{project.date}</span>，
-    <span>{project.status}</span>
-    <p class="mt-0">{project.description}</p>
-</li>
+{
+  Astro.props.index !== undefined ? (
+    <ol>
+      <span class="w-8 inline-block">{Astro.props.index + 1}.</span>
+      <span>{project.name}</span>， <span>{project.date}</span>，
+      <span>{project.status}</span>
+      <p class="mt-0">{project.description}</p>
+    </ol>
+  ) : (
+    <li>
+      <span>{project.name}</span>， <span>{project.date}</span>，
+      <span>{project.status}</span>
+      <p class="mt-0">{project.description}</p>
+    </li>
+  )
+}

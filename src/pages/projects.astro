@@ -12,7 +12,7 @@ import projects from "../content/projects.json";
   <ul>
     {
       Object.values(projects.softwares).map((software, index) => (
-        <ProjectItem project={software} />
+        <ProjectItem index={index} project={software} />
       ))
     }
   </ul>
