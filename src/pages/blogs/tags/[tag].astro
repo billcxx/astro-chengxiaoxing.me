@@ -1,17 +1,17 @@
 ---
 import ArticleList from "../../../components/ArticleList.astro";
 import { getCollection } from "astro:content";
-import ProjectsListLayout from "../../../layouts/ProjectsListLayout.astro";
+import BlogsListLayout from "../../../layouts/BlogsListLayout.astro";
 
 export async function getStaticPaths() {
-  const allPosts = await Astro.glob("../../../content/projects/*.md");
+  const allPosts = await Astro.glob("../../../content/blogs/*.md");
   const uniqueTags = [
     ...new Set(allPosts.map((post) => post.frontmatter.tags).flat()),
   ];
   var projects: { [index: string]: any } = {};
   for (var i = 0; i < uniqueTags.length; i++) {
     var tag = uniqueTags[i];
-    projects[tag] = await getCollection("projects", ({ data }) => {
+    projects[tag] = await getCollection("blogs", ({ data }) => {
       return data.tags.includes(tag);
     });
   }
@@ -28,8 +28,8 @@ const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
 
-<ProjectsListLayout title={`Posts tagged with ${tag}`}>
+<BlogsListLayout title={`Posts tagged with ${tag}`}>
   <div class="max-w-prose mx-auto">
     <ArticleList articles={posts} path="projects" />
   </div>
-</ProjectsListLayout>
+</BlogsListLayout>
