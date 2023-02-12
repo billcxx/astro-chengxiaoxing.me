@@ -5,10 +5,10 @@ import AuthorDisclaimer from "../components/AuthorDisclaimer.astro";
 import PublicationItem from "../components/PublicationItem.astro";
 ---
 
-<PublicationsLayout title="论文发表">
+<PublicationsLayout title="">
   <AuthorDisclaimer />
   <div>
-    <h3>学位论文</h3>
+    <h2>学位论文</h2>
     <ul>
       {
         publications.dissertation.map((dissertation, index) => (
@@ -22,7 +22,7 @@ import PublicationItem from "../components/PublicationItem.astro";
     </ul>
   </div>
   <div>
-    <h3>杂志文章</h3>
+    <h2>杂志文章</h2>
     <ul>
       {
         publications.journals.map((journal, index) => (
@@ -32,7 +32,7 @@ import PublicationItem from "../components/PublicationItem.astro";
     </ul>
   </div>
   <div>
-    <h3>出版书籍</h3>
+    <h2>出版书籍</h2>
     <ul>
       {
         publications.books.map((book, index) => (

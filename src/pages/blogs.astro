@@ -10,7 +10,7 @@ const allPosts = await getCollection("blogs");
 // const { posts } = Astro.props;
 ---
 
-<BlogsListLayout title="All projects">
+<BlogsListLayout title="">
   <Tags folder="projects"/>
   <ArticleList articles={allPosts} path="blogs"/>
 </BlogsListLayout>
