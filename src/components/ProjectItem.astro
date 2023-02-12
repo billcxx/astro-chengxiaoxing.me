@@ -13,11 +13,13 @@ const { project } = Astro.props;
 
 {
   Astro.props.index !== undefined ? (
-    <ol>
-      <span class="w-8 inline-block">{Astro.props.index + 1}.</span>
-      <span>{project.name}</span>， <span>{project.date}</span>，
-      <span>{project.status}</span>
-      <p class="mt-0">{project.description}</p>
+    <ol class="flex mt-0 mb-0">
+      <span class="w-8 flex">{Astro.props.index + 1}.</span>
+      <div class="flex-1">
+        <span>{project.name}</span>， <span>{project.date}</span>，
+        <span>{project.status}</span>
+        <p class="mt-0">{project.description}</p>
+      </div>
     </ol>
   ) : (
     <li>

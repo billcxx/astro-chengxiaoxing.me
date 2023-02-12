@@ -29,14 +29,16 @@ const { publication, type, index } = Astro.props;
 {
   type === "dissertation" ? (
     index !== undefined ? (
-      <ol>
-        <span class="w-8 inline-block">{index + 1}.</span>
-        <DissertationContent
-          author={publication.author}
-          year={publication.year}
-          school={publication.school}
-          title={publication.title}
-        />
+      <ol class="flex">
+        <span class="flex w-8">{index + 1}.</span>
+        <div class="flex-1">
+          <DissertationContent
+            author={publication.author}
+            year={publication.year}
+            school={publication.school}
+            title={publication.title}
+          />
+        </div>
       </ol>
     ) : (
       <DissertationContent
@@ -52,14 +54,16 @@ const { publication, type, index } = Astro.props;
 {
   type === "journal" ? (
     index !== undefined ? (
-      <ol>
-        <span class="w-8 inline-block">{index + 1}.</span>
-        <JournalContent
-          authors={publication.authors}
-          year={publication.year}
-          journal={publication.journal}
-          title={publication.title}
-        />
+      <ol class="flex">
+        <span class="flex w-8">{index + 1}.</span>
+        <div class="flex-1">
+          <JournalContent
+            authors={publication.authors}
+            year={publication.year}
+            journal={publication.journal}
+            title={publication.title}
+          />
+        </div>
       </ol>
     ) : (
       <JournalContent
@@ -75,13 +79,15 @@ const { publication, type, index } = Astro.props;
 {
   type === "book" ? (
     index !== undefined ? (
-      <ol>
-        <span class="w-8 inline-block">{index + 1}.</span>
-        <BookContent
-          authors={publication.authors}
-          year={publication.year}
-          title={publication.title}
-        />
+      <ol class="flex">
+        <span class="w-8 flex">{index + 1}.</span>
+        <div class="flex-1">
+          <BookContent
+            authors={publication.authors}
+            year={publication.year}
+            title={publication.title}
+          />
+        </div>
       </ol>
     ) : (
       <BookContent
