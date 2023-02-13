@@ -8,10 +8,10 @@ export async function getStaticPaths() {
   const uniqueTags = [
     ...new Set(allPosts.map((post) => post.frontmatter.tags).flat()),
   ];
-  var projects: { [index: string]: any } = {};
+  var posts: { [index: string]: any } = {};
   for (var i = 0; i < uniqueTags.length; i++) {
     var tag = uniqueTags[i];
-    projects[tag] = await getCollection("blogs", ({ data }) => {
+    posts[tag] = await getCollection("blogs", ({ data }) => {
       return data.tags.includes(tag);
     });
   }
@@ -19,7 +19,7 @@ export async function getStaticPaths() {
     // const filteredPosts = allPosts.filter((post) => post.frontmatter.tags.includes(tag));
     return {
       params: { tag },
-      props: { posts: projects[tag] },
+      props: { posts: posts[tag] },
     };
   });
 }
@@ -30,6 +30,6 @@ const { posts } = Astro.props;
 
 <BlogsListLayout title={`Posts tagged with ${tag}`}>
   <div class="max-w-prose mx-auto">
-    <ArticleList articles={posts} path="projects" />
+    <ArticleList articles={posts} path="blogs" />
   </div>
 </BlogsListLayout>

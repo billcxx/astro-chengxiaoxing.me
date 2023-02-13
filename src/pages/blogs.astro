@@ -5,13 +5,12 @@ import Tags from "../components/Tags.astro";
 import ArticleList from "../components/ArticleList.astro";
 // Get all entries from a collection. Requires the name of the collection as an argument.
 const allPosts = await getCollection("blogs");
-// const allProjects = await Astro.glob("../content/projects/*.md");
 
 // const { posts } = Astro.props;
 ---
 
 <BlogsListLayout title="">
-  <Tags folder="projects"/>
+  <Tags folder="blogs"/>
   <ArticleList articles={allPosts} path="blogs"/>
 </BlogsListLayout>
 
