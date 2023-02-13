@@ -56,7 +56,7 @@
         {
             "id": "admin",
             "name": "Linux管理员",
-            "description": "搭建并管理一个计算用单节点服务器，一个虚拟化服务器"
+            "description": "搭建并管理一个计算用单节点服务器，一个虚拟化服务器。"
         },
         {
             "id": "react",
@@ -71,12 +71,17 @@
         {
             "id": "astro",
             "name": "Astro",
-            "description": "本个人网站就是使用vue+nuxt3搭建的。"
+            "description": "本个人网站就是使用Astro搭建的。"
         },
         {
             "id": "Qt",
             "name": "Qt",
-            "description": "MuViz"
+            "description": "MuViz的图形界面是使用了Qt编写的。"
+        },
+        {
+            "id": "vtk",
+            "name": "VTK",
+            "description": "MuViz和课题组内部的可视化程序都是使用了VTK作为可视化引擎。"
         }
     ],
     "languages": [

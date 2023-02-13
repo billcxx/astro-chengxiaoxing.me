@@ -9,7 +9,8 @@ publishDate: "2023-02-12"
 
 Open意味着开源，CAX意味着包含了CAD（Design）、CAE（Engineering）、CAM（Manufacturing）、CAI（Inspection）、CAM（Measurement），加号意味着我们引入了AI，SDK（Software Development Kit）是指软件开发工具包。
 
-以下仅代表我对这个项目的理解。
+#### *以下仅代表我对这个项目的理解。*
+<br/>
 
 ## 为何加入这个项目
 
