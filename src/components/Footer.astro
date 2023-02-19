@@ -1,3 +1,28 @@
-<div class="text-sm text-gray4 text-center p-10">
-  All right reserved by Cheng, Xiaoxing
-</div>
+---
+import { Icon } from "astro-icon";
+---
+
+<footer>
+  <div
+    class="prose mx-auto flex justify-between items-center text-gray4 py-10"
+  >
+    <div class="flex items-center text-sm">
+      <a href="mailto:hello@chengxiaoxing.me" class="mr-2"
+        >hello@chengxiaoxing.me</a
+      >
+      <a
+        href="https://www.youtube.com/channel/UCqiTHfykjGl4_9fkStHU0Og"
+        class="mr-2 w-6 inline-block"
+      >
+        <Icon name="tabler:brand-youtube" />
+      </a>
+      <a
+        href="https://space.bilibili.com/1974561"
+        class="mr-2 w-6 inline-block"
+      >
+        <Icon name="bilibili" />
+      </a>
+    </div>
+    <div>All rights reserved by Cheng, Xiaoxing &copy; 2023</div>
+  </div>
+</footer>
