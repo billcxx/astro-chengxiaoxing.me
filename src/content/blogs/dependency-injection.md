@@ -87,7 +87,7 @@ PREDICT = PREcipitation + DIffusion + reaCTion
 
 ## 方案二：从编译上解决
 
-但反过来想一想，我们其实并不需要可拓展性，因为大概永远都只会有主程序和Pandat插件这两种使用的情况。而且我们的问题跟一般的dependency injection又不太一样，一般的用法种可能是client是在一个函数库中，各个service又有自己的函数库，而我们的主程序和插件本质上是两个程序，不可能在同一个程序同时用到主程序和插件。
+但反过来想一想，我们其实并不需要可拓展性，因为大概永远都只会有主程序和Pandat插件这两种使用的情况。而且我们的问题跟一般的dependency injection又不太一样，一般的用法可能是client是在一个函数库中，各个service又有自己的函数库，而我们的主程序和插件本质上是两个程序，不可能在同一个程序同时用到主程序和插件。
 
 所以实现我们需求的最简单做法大概就是不要把核心部分编译成一个函数库，而是在编译主程序和插件的时候把核心部分包括在各自的项目中一起编译。我们只需要根据核心部分使用热力学函数的规则，在主程序和插件中各自定义符合参数传递的函数就够了，由于主程序和插件是两个编译的项目，所以用相同的函数名并不会冲突，如下图：
 
@@ -98,6 +98,6 @@ PREDICT = PREcipitation + DIffusion + reaCTion
 
 在学习面向对象的编程过程中，我就学过dependency injection很多次，
 不过这是第一次在自己的项目中认真考虑是否要使用这种设计模式。
-在整个PREDICT框架的改进过程中通过一两天的仔细思考dependency injection的实现和优劣，
+在整个PREDICT框架的改进过程中通过一两天，仔细思考dependency injection的实现和优劣，
 我最终根据项目的特点发现了比dependency injection更简单的解决方案。
-我相信在未来的项目，比如OpenCAXPlus中的FENGsim一定有机会使用到dependency injection的技巧。
+不过我相信在未来的项目，比如OpenCAXPlus中的FENGsim一定有机会使用到dependency injection的设计。
