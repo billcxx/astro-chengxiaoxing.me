@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
   const blogEntries = await getCollection('blogs');
@@ -13,59 +13,6 @@ const { entry } = Astro.props;
 const { Content, headings } = await entry.render();
 ---
 
-<BaseLayout title={entry.data.title}>
-  <section class="article-section">
-    <article class="article prose">
+<ArticleLayout title={entry.data.title} headings={headings} tags={entry.data.tags}>
         <Content />
-    </article>
-    <aside class="aside">
-      <nav class="toc">
-        <ul class="toc-links">
-          {
-            Object.values(headings).map((head,index)=>(
-              <li class={"toc-link toc-link-"+head.depth}>
-                <a href={"#"+head.slug}>{head.text}</a>
-              </li>
-            ))
-          }
-        </ul>
-      </nav>    
-    </aside>
-  </section>
-</BaseLayout>
-
-
-<style scoped>
-  .article-section {
-  @apply grid grid-cols-12;
-}
-.aside {
-  @apply col-span-full md:col-span-3 row-start-1 w-full pt-14;
-}
-.aside .toc {
-  @apply sticky top-20;
-}
-.article {
-  @apply col-span-full md:col-span-8 md:col-start-4 md:row-start-1 w-full p-4 max-w-3xl mx-auto;
-}
-  .toc {
-    @apply p-2 bg-slate-50 border border-slate-200 rounded-lg;
-    @apply text-xs;
-    @apply max-h-[calc(100vh-6rem)] overflow-auto;
-  }
-  .toc-links {
-    @apply flex flex-col gap-2 px-2;
-  }
-  .toc-link{
-    @apply text-slate-500 hover:text-slate-900;
-  }
-  .toc-link-1 {
-      @apply pl-0 text-base;
-    }
-    .toc-link-2 {
-      @apply pl-2 text-sm;
-    }
-    .toc-link-3 {
-      @apply pl-4 text-xs;
-    }
-  </style>
+</ArticleLayout>

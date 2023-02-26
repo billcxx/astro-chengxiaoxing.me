@@ -5,7 +5,7 @@ tags: [MUPRO, SDK, PREDICT, design pattern, dependency injection]
 publishDate: "2023-02-25"
 ---
 
-# MuPRO PREDICT
+## MuPRO PREDICT
 
 PREDICT = PREcipitation + DIffusion + reaCTion 
 是MuPRO开发的新一代针对相变、扩散、化学反应的相场模型，它的一大重要进步在于可以处理line compound/stoichiometric compound。

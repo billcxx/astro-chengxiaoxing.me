@@ -5,7 +5,7 @@ tags: [OpenCAX+, Open source, SDK]
 publishDate: "2023-02-12"
 ---
 
-# OpenCAX+ SDK
+## OpenCAX+ SDK
 
 Open意味着开源，CAX意味着包含了CAD（Design）、CAE（Engineering）、CAM（Manufacturing）、CAI（Inspection）、CAM（Measurement），加号意味着我们引入了AI，SDK（Software Development Kit）是指软件开发工具包。
 
