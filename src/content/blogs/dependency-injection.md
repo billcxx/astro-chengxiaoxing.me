@@ -1,7 +1,7 @@
 ---
 title: 'Dependency injection'
 description: '从MuPRO PREDICT的设计，思考学习dependency injection'
-tags: [MuPRO, SDK, PREDICT, design pattern, dependency injection]
+tags: [MUPRO, SDK, PREDICT, design pattern, dependency injection]
 publishDate: "2023-02-25"
 ---
 
