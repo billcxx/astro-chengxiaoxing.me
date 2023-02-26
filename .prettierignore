@@ -1,4 +1,5 @@
 *.*
+!*.astro
 !*.css
 !*.js
 !*.json
@@ -9,7 +10,6 @@
 !*.ts
 !*.tsx
 !*.yml
-!*.astro
 
 dist/
 

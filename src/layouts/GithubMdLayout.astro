@@ -1,13 +1,12 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-const {frontmatter} = Astro.props;
+const { frontmatter } = Astro.props;
 import "../styles/github-markdown.css";
 ---
 
-<BaseLayout title={frontmatter.title} >
-    <div class="markdown-body">
-
-        <h1>{frontmatter.title}</h1>
-        <slot/>
-    </div>
+<BaseLayout title={frontmatter.title}>
+  <div class="markdown-body">
+    <h1>{frontmatter.title}</h1>
+    <slot />
+  </div>
 </BaseLayout>

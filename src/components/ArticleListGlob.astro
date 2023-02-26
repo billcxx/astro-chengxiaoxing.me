@@ -35,7 +35,7 @@ const { articles, path } = Astro.props;
     @apply flex flex-col gap-6;
   }
   .article-item {
-    @apply pt-6 first-of-type:border-none border-t border-slate-200;
+    @apply border-t border-slate-200 pt-6 first-of-type:border-none;
   }
   .article-item a {
     @apply no-underline;
@@ -46,12 +46,11 @@ const { articles, path } = Astro.props;
   }
 
   .article-tags .tag {
-    @apply bg-slate-100 text-slate-700 text-sm p-2 py-1 rounded-md;
-    @apply transition-all !py-0.5;
+    @apply rounded-md bg-slate-100 p-2 py-1 text-sm text-slate-700;
+    @apply !py-0.5 transition-all;
   }
 
   .article-item > * > .wrapper {
     @apply flex items-start gap-4;
   }
-
 </style>

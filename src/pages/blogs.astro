@@ -14,8 +14,8 @@ const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 ---
 
 <BlogsListLayout title="">
-  <Tags folder="blogs" tags={tags}/>
-  <ArticleList articles={allPosts} path="blogs"/>
+  <Tags folder="blogs" tags={tags} />
+  <ArticleList articles={allPosts} path="blogs" />
 </BlogsListLayout>
 
 <style>
