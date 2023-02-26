@@ -24,7 +24,7 @@ const { Content, headings } = await entry.render();
           {
             Object.values(headings).map((head,index)=>(
               <li class={"toc-link toc-link-"+head.depth}>
-                <a href={head.slug}>{head.text}</a>
+                <a href={"#"+head.slug}>{head.text}</a>
               </li>
             ))
           }
