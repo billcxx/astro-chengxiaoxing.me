@@ -9,6 +9,7 @@
 !*.ts
 !*.tsx
 !*.yml
+!*.astro
 
 dist/
 
