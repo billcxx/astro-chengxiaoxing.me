@@ -1,6 +1,6 @@
 ---
-title: 'MuPRO PhaseFieldSDK'
-description: 'The parallel phase-field simulation SDK from MuPRO'
+title: "MuPRO PhaseFieldSDK"
+description: "The parallel phase-field simulation SDK from MuPRO"
 tags: [MUPRO, Phase-Field, SDK]
 publishDate: "2023-01-30"
 ---
@@ -11,11 +11,11 @@ publishDate: "2023-01-30"
 
 这篇文章中的一些部分和我在组会上的汇报有重合，可以参考组会的[slides](https://mupro-simulation.github.io/MUPRO-PFSDK-Tutorial/1)和[录屏](https://youtu.be/5A9WkpudEuo)。
 
-## MuPRO相场模拟的历史
+## MuPRO 相场模拟的历史
 
-## 新老Library对比
+## 新老 Library 对比
 
-## 为何要开发SDK而不是Library
+## 为何要开发 SDK 而不是 Library
 
 ## 商业模式
 

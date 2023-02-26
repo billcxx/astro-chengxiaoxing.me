@@ -7,6 +7,7 @@ This site is created starting from Astro Starter Kit: Basics
 ```
 npm create astro@latest -- --template basics
 ```
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:

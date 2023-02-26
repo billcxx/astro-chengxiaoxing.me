@@ -3,7 +3,6 @@ import CVLayout from "../layouts/CVLayout.astro";
 import cv from "../content/cv.json";
 import projects from "../content/projects.json";
 import ProjectItem from "../components/ProjectItem.astro";
-
 ---
 
 <CVLayout title="">
@@ -41,8 +40,8 @@ import ProjectItem from "../components/ProjectItem.astro";
       <a href="projects">项目页面</a>。
     </p>
     <ul>
-      <ProjectItem project={projects.softwares.ocp}/>
-      <ProjectItem project={projects.softwares.pfsdk}/>
+      <ProjectItem project={projects.softwares.ocp} />
+      <ProjectItem project={projects.softwares.pfsdk} />
     </ul>
   </div>
   <div>
@@ -94,7 +93,7 @@ import ProjectItem from "../components/ProjectItem.astro";
           {
             cv.languages.map((language) => (
               <tr>
-                <td class="align-top w-40" align="right">
+                <td class="w-40 align-top" align="right">
                   {language.name}
                 </td>
                 <td class="align-top">{language.description}</td>
@@ -111,7 +110,7 @@ import ProjectItem from "../components/ProjectItem.astro";
           {
             cv.softwares.map((software) => (
               <tr>
-                <td class="align-top w-40" align="right">
+                <td class="w-40 align-top" align="right">
                   {software.name}
                 </td>
                 <td class="align-top">{software.description}</td>
