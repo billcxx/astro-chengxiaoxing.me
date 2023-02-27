@@ -19,12 +19,12 @@ import "../styles/global.css";
     <title>{title}</title>
   </head>
   <body>
-    <wrapper class="flex min-h-full flex-col justify-between">
+    <wrapper class="wrapper-class">
       <main>
         <Header />
         <slot />
-        <Footer />
       </main>
+      <Footer />
     </wrapper>
   </body>
 </html>
@@ -54,7 +54,8 @@ import "../styles/global.css";
     margin: auto;
     height: 100vh;
   }
-  main{
+  .wrapper-class{
+    @apply flex min-h-full flex-col justify-between;
     background: rgba(255,255,255,0.5);
   }
 </style>
