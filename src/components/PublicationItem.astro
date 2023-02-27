@@ -29,74 +29,39 @@ const { publication, type, index } = Astro.props;
 <>
   {
     type === "dissertation" ? (
-      index !== undefined ? (
-        <ol class="flex">
-          <span class="flex w-8">{index + 1}.</span>
-          <div class="flex-1">
-            <DissertationContent
-              author={publication.author}
-              year={publication.year}
-              school={publication.school}
-              title={publication.title}
-            />
-          </div>
-        </ol>
-      ) : (
+      <li>
         <DissertationContent
           author={publication.author}
           year={publication.year}
-          school={publication.school}
+          scholi={publication.scholi}
           title={publication.title}
         />
-      )
+      </li>
     ) : null
   }
 
   {
     type === "journal" ? (
-      index !== undefined ? (
-        <ol class="flex">
-          <span class="flex w-8">{index + 1}.</span>
-          <div class="flex-1">
-            <JournalContent
-              authors={publication.authors}
-              year={publication.year}
-              journal={publication.journal}
-              title={publication.title}
-            />
-          </div>
-        </ol>
-      ) : (
+      <li>
         <JournalContent
           authors={publication.authors}
           year={publication.year}
           journal={publication.journal}
           title={publication.title}
         />
-      )
+      </li>
     ) : null
   }
 
   {
     type === "book" ? (
-      index !== undefined ? (
-        <ol class="flex">
-          <span class="flex w-8">{index + 1}.</span>
-          <div class="flex-1">
-            <BookContent
-              authors={publication.authors}
-              year={publication.year}
-              title={publication.title}
-            />
-          </div>
-        </ol>
-      ) : (
+      <li>
         <BookContent
           authors={publication.authors}
           year={publication.year}
           title={publication.title}
         />
-      )
+      </li>
     ) : null
   }
 </>

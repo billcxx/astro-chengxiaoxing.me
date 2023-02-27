@@ -9,11 +9,21 @@ import projects from "../content/projects.json";
 
 <ProjectsLayout title="">
   <h2>软件项目</h2>
-  <ul>
+  <ol>
     {
       Object.values(projects.softwares).map((software, index) => (
-        <ProjectItem index={index} project={software} />
+        <ProjectItem project={software} />
       ))
     }
-  </ul>
+  </ol>
+  <h2>可视化项目</h2>
+  <ol>
+    {
+      Object.values(projects.visualizations).map((visualization, index) => (
+        <ProjectItem
+          project={visualization}
+        />
+      ))
+    }
+  </ol>
 </ProjectsLayout>

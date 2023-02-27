@@ -23,8 +23,8 @@ import "../styles/global.css";
       <main>
         <Header />
         <slot />
+        <Footer />
       </main>
-      <Footer />
     </wrapper>
   </body>
 </html>
@@ -53,5 +53,8 @@ import "../styles/global.css";
     width: 960px;
     margin: auto;
     height: 100vh;
+  }
+  main{
+    background: rgba(255,255,255,0.5);
   }
 </style>

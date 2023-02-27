@@ -9,7 +9,7 @@ import PublicationItem from "../components/PublicationItem.astro";
   <AuthorDisclaimer />
   <div>
     <h2>学位论文</h2>
-    <ul>
+    <ol>
       {
         publications.dissertation.map((dissertation, index) => (
           <PublicationItem
@@ -19,26 +19,26 @@ import PublicationItem from "../components/PublicationItem.astro";
           />
         ))
       }
-    </ul>
+    </ol>
   </div>
   <div>
     <h2>杂志文章</h2>
-    <ul>
+    <ol>
       {
         publications.journals.map((journal, index) => (
           <PublicationItem type="journal" publication={journal} index={index} />
         ))
       }
-    </ul>
+    </ol>
   </div>
   <div>
     <h2>出版书籍</h2>
-    <ul>
+    <ol>
       {
         publications.books.map((book, index) => (
           <PublicationItem type="book" publication={book} index={index} />
         ))
       }
-    </ul>
+    </ol>
   </div>
 </PublicationsLayout>

@@ -5,27 +5,61 @@ export interface Props {
     date: string;
     status: string;
     description: string;
+    id: string;
+    image?: string;
   };
-  index?: number;
 }
 const { project } = Astro.props;
+import { Image } from "@astrojs/image/components";
 ---
 
-{
-  Astro.props.index !== undefined ? (
-    <ol class="mt-0 mb-0 flex">
-      <span class="flex w-8">{Astro.props.index + 1}.</span>
-      <div class="flex-1">
-        <span>{project.name}</span>， <span>{project.date}</span>，
-        <span>{project.status}</span>
-        <p class="mt-0">{project.description}</p>
-      </div>
-    </ol>
-  ) : (
-    <li>
-      <span>{project.name}</span>， <span>{project.date}</span>，
-      <span>{project.status}</span>
-      <p class="mt-0">{project.description}</p>
-    </li>
-  )
-}
+<>
+  {
+    (
+      <li class="project-item" id={project.id}>
+        <div class="project-text">
+          <span>{project.name}</span>， <span>{project.date}</span>，
+          <span>{project.status}</span>
+          <p class="mt-0">{project.description}</p>
+        </div>
+        {project.image && (
+          <img src={project.image} class="bg-image" alt={project.image} />
+        )}
+      </li>
+    )
+  }
+</>
+
+<style scoped>
+  .project-item {
+    @apply mt-0 mb-0;
+  }
+  .project-text {
+    @apply -ml-10 pl-10;
+  }
+  .bg-image {
+    @apply fixed inset-0 -z-10 m-0 opacity-0 transition-opacity;
+  }
+  .project-text:hover + .bg-image {
+    @apply opacity-100;
+  }
+
+  .project-text:hover {
+    @apply bg-white;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 15%,
+      rgba(255, 255, 255, 1) 85%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  .project-item:hover {
+    @apply -z-10;
+  }
+
+  .project-item:has(.project-text:hover) {
+    @apply z-50;
+  }
+</style>

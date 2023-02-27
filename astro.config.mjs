@@ -4,7 +4,10 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
+import image from "@astrojs/image";
+
+// https://astro.build/config
 export default defineConfig({
-    site: 'https://chengxiaoxing.me/',
-  integrations: [tailwind()]
+  site: 'https://chengxiaoxing.me/',
+  integrations: [tailwind(), image()]
 });
