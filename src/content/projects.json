@@ -50,7 +50,7 @@
       "date": "2019",
       "status": "尝试Nature volume 568 issue 7752 封面 未成功",
       "description": "Observation of room-temperature polar skyrmions in PTO/STO superlattice",
-      "image": "gallery/nature-skyrmion.jpg"
+      "image": "/gallery/nature-skyrmion.jpg"
     },
     "yuhui-breakdown": {
       "id": "yuhui-breakdown",
@@ -58,7 +58,7 @@
       "date": "2018",
       "status": "帮助组员可视化，原准备参加MVC10，但最后好像没有投稿",
       "description": "在聚合物基体中嵌入了陶瓷第二相材料的击穿路径",
-      "image": "gallery/breakdown.jpg"
+      "image": "/gallery/breakdown.jpg"
     }
   }
 }
