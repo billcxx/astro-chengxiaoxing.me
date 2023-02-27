@@ -20,9 +20,7 @@ import projects from "../content/projects.json";
   <ol>
     {
       Object.values(projects.visualizations).map((visualization, index) => (
-        <ProjectItem
-          project={visualization}
-        />
+        <ProjectItem project={visualization} />
       ))
     }
   </ol>
