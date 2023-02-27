@@ -43,21 +43,21 @@
       "description": "基于shell脚本的命令行工具。用于自动生成高通量任务矩阵，提交计算任务或完成统一操作。"
     }
   },
-  "visualizations":{
-    "nature-skyrmion":{
+  "visualizations": {
+    "nature-skyrmion": {
       "id": "nature-skyrmion",
       "name": "Polar Skyrmion",
       "date": "2019",
       "status": "尝试Nature volume 568 issue 7752 封面 未成功",
-      "description":"Observation of room-temperature polar skyrmions in PTO/STO superlattice",
+      "description": "Observation of room-temperature polar skyrmions in PTO/STO superlattice",
       "image": "gallery/nature-skyrmion.jpg"
     },
-    "yuhui-breakdown":{
+    "yuhui-breakdown": {
       "id": "yuhui-breakdown",
       "name": "Dielectric breakdown path",
       "date": "2018",
       "status": "帮助组员可视化，原准备参加MVC10，但最后好像没有投稿",
-      "description":"在聚合物基体中嵌入了陶瓷第二相材料的击穿路径",
+      "description": "在聚合物基体中嵌入了陶瓷第二相材料的击穿路径",
       "image": "gallery/breakdown.jpg"
     }
   }
