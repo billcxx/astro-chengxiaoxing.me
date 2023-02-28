@@ -1,12 +1,16 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import Tags from "../components/Tags.astro";
-export interface Props {
-  title: string;
-  headings: { depth: number; slug: string; text: string }[];
-  tags: string[];
-}
-const { title, headings, tags } = Astro.props;
+import type { CollectionEntry } from 'astro:content'
+
+// export interface Props {
+//   title: string;
+//   headings: { depth: number; slug: string; text: string }[];
+//   tags: string[];
+// }
+
+type Props = CollectionEntry<'blogs'>['data']
+const { title, headings, tags, publishDate } = Astro.props;
 ---
 
 <BaseLayout title={title}>

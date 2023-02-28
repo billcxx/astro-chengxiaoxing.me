@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { sortPosts } from '../utils/sortPosts'
 
 export interface Props {
   articles: CollectionEntry<"blogs">[];
@@ -11,7 +12,7 @@ const { articles, path } = Astro.props;
 
 <ul class="article-list">
   {
-    articles.map((article) => (
+    articles.sort(sortPosts).map((article) => (
       <li class="article-item">
         <h1 class="text-xl">
           <a href={`/${path}/${article.slug}`}>{article.data.title}</a>
