@@ -4,7 +4,9 @@ import { getCollection } from "astro:content";
 import Tags from "../components/Tags.astro";
 import ArticleList from "../components/ArticleList.astro";
 // Get all entries from a collection. Requires the name of the collection as an argument.
-const allPosts = await getCollection("blogs");
+const allPosts = await getCollection("blogs",({data})=>{
+  return data.draft!==true;
+});
 // const allmd = await Astro.glob("../content/blogs/*.md");
 
 // const tags = [...new Set(allmd.map((post) => post.frontmatter.tags).flat())];

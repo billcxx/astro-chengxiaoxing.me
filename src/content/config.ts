@@ -5,6 +5,7 @@ const mdSchema = z.object({
   description: z.string(),
   tags: z.array(z.string()),
   publishDate: z.string().transform((str) => new Date(str)),
+  draft: z.boolean().default(false),
 });
 
 // 2. Define your collection(s)
