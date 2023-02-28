@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import Tags from "../components/Tags.astro";
-import type { CollectionEntry } from 'astro:content'
+import type { CollectionEntry } from "astro:content";
 
 // export interface Props {
 //   title: string;
@@ -9,7 +9,7 @@ import type { CollectionEntry } from 'astro:content'
 //   tags: string[];
 // }
 
-type Props = CollectionEntry<'blogs'>['data']
+type Props = CollectionEntry<"blogs">["data"];
 const { title, headings, tags, publishDate } = Astro.props;
 ---
 
