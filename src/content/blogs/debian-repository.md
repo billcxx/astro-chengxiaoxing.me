@@ -12,8 +12,8 @@ draft: true
 
 ## 三步
 
-### deb打包
+### deb 打包
 
-### 在本地制作repository结构
+### 在本地制作 repository 结构
 
 ### 上传到网络，让用户使用
