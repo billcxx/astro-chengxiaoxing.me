@@ -1,11 +1,11 @@
 ---
-import PublicationsLayout from "../layouts/PublicationsLayout.astro";
-import publications from "../content/publications.json";
-import AuthorDisclaimer from "../components/AuthorDisclaimer.astro";
-import PublicationItem from "../components/PublicationItem.astro";
+import PageLayout from "@layouts/PageLayout.astro";
+import publications from "@content/publications.json";
+import AuthorDisclaimer from "@components/publications/AuthorDisclaimer.astro";
+import PublicationItem from "@components/publications/PublicationItem.astro";
 ---
 
-<PublicationsLayout title="">
+<PageLayout title="">
   <AuthorDisclaimer />
   <div>
     <h2>学位论文</h2>
@@ -41,4 +41,4 @@ import PublicationItem from "../components/PublicationItem.astro";
       }
     </ol>
   </div>
-</PublicationsLayout>
+</PageLayout>

@@ -1,13 +1,7 @@
 ---
-import BaseLayout from "./BaseLayout.astro";
-import Tags from "../components/Tags.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import Tags from "@components/blogs/Tags.astro";
 import type { CollectionEntry } from "astro:content";
-
-// export interface Props {
-//   title: string;
-//   headings: { depth: number; slug: string; text: string }[];
-//   tags: string[];
-// }
 
 type Props = CollectionEntry<"blogs">["data"];
 const { title, headings, tags, publishDate } = Astro.props;
@@ -44,7 +38,7 @@ const { title, headings, tags, publishDate } = Astro.props;
     @apply col-span-full row-start-1 w-full pt-14 md:col-span-3;
   }
   .aside .toc {
-    @apply sticky top-20;
+    @apply sticky top-24;
   }
   .article {
     @apply col-span-full mx-auto w-full max-w-3xl p-4 md:col-span-8 md:col-start-4 md:row-start-1;

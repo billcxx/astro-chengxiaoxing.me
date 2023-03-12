@@ -1,7 +1,7 @@
 ---
-import ArticleList from "../../../components/ArticleList.astro";
+import BlogList from "@components/blogs/BlogList.astro";
 import { getCollection } from "astro:content";
-import BlogsListLayout from "../../../layouts/BlogsListLayout.astro";
+import PageLayout from "@layouts/PageLayout.astro";
 
 export async function getStaticPaths() {
   const allPosts = await Astro.glob("../../../content/blogs/*.md");
@@ -28,8 +28,8 @@ const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
 
-<BlogsListLayout title={`Posts tagged with ${tag}`}>
+<PageLayout title={`Articles tagged with ${tag}`}>
   <div class="mx-auto max-w-prose">
-    <ArticleList articles={posts} path="blogs" />
+    <BlogList articles={posts} path="blogs" />
   </div>
-</BlogsListLayout>
+</PageLayout>

@@ -1,13 +1,10 @@
 ---
-import ProjectsLayout from "../layouts/ProjectsLayout.astro";
-import publications from "../content/publications.json";
-import Authors from "../components/Authors.astro";
-import AuthorDisclaimer from "../components/AuthorDisclaimer.astro";
-import ProjectItem from "../components/ProjectItem.astro";
-import projects from "../content/projects.json";
+import PageLayout from "@layouts/PageLayout.astro";
+import ProjectItem from "@components/projects/ProjectItem.astro";
+import projects from "@content/projects.json";
 ---
 
-<ProjectsLayout title="">
+<PageLayout title="">
   <h2>软件项目</h2>
   <ol>
     {
@@ -24,4 +21,4 @@ import projects from "../content/projects.json";
       ))
     }
   </ol>
-</ProjectsLayout>
+</PageLayout>

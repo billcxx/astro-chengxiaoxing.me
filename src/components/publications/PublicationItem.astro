@@ -1,8 +1,8 @@
 ---
-import DissertationContent from "./DissertationContent.astro";
-import JournalContent from "./JournalContent.astro";
-import BookContent from "./BookContent.astro";
-import type { DissertationType, JournalType, BookType } from "../env";
+import DissertationContent from "@components/publications/DissertationContent.astro";
+import JournalContent from "@components/publications/JournalContent.astro";
+import BookContent from "@components/publications/BookContent.astro";
+import type { DissertationType, JournalType, BookType } from "env.d.ts";
 
 interface dissertation {
   publication: DissertationType;

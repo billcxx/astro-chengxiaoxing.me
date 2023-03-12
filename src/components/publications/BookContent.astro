@@ -1,8 +1,8 @@
 ---
-import type { BookType } from "./type";
+import Authors from "@components/publications/Authors.astro";
+import type { BookType } from "env.d.ts";
 export type Props = BookType;
 const { authors, title, year } = Astro.props;
-import Authors from "../components/Authors.astro";
 ---
 
 <>

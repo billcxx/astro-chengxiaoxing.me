@@ -1,0 +1,48 @@
+---
+export interface Props {
+  folder: string;
+  tags: string[];
+  showIcon: boolean;
+}
+
+import Icon from "astro-icon";
+const { folder, tags, showIcon } = Astro.props;
+---
+
+<div class="tag-list">
+  {
+    showIcon && (
+      <div class="w-12">
+        <Icon name="carbon:tag" />
+      </div>
+    )
+  }
+  <ul class="tags expanded">
+    {
+      tags.map((tag) => (
+        <li class="tag">
+          <a href={`/${folder}/tags/${tag}`}>{tag}</a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+  .tag {
+    @apply my-0 rounded-md bg-slate-100 px-2 py-1  text-sm text-slate-700 transition-all hover:-translate-y-0.5;
+    @apply list-none;
+  }
+  .tag-list {
+    @apply m-0 flex items-center gap-2 rounded-lg border border-transparent;
+  }
+  .tag-list.active {
+    @apply border-slate-200;
+  }
+  .tags {
+    @apply m-0 p-0 flex max-w-0 flex-wrap gap-1 overflow-hidden transition-all;
+  }
+  .tags.expanded {
+    @apply max-w-full;
+  }
+</style>
