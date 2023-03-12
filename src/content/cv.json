@@ -1,23 +1,22 @@
 {
   "title": "Cheng, Xiaoxing CV",
-  "download":{
+  "download": {
     "description": "下载简历，2023/02/24版",
     "url": "程晓行简历-202302.pdf"
   },
   "project": {
-    "description":"我的项目经历主要是与物理和材料领域计算机模拟相关，包含建模、编程、可视化、商业化等方向。由于项目较多，这里我只列举两个近期的主要项目，完整列表请参考<a href='projects'>项目页面</a>。"
+    "description": "我的项目经历主要是与物理和材料领域计算机模拟相关，包含建模、编程、可视化、商业化等方向。由于项目较多，这里我只列举两个近期的主要项目，完整列表请参考<a href='projects'>项目页面</a>。"
   },
-  "funding":{
-    "phd":{
-
-      "description":"我的博士主要研究方向就是铁电材料相场模拟。具体科研项目太多就不列举了，大部分工作发表了论文，可以参考<a href='publications'>我的论文发表</a>。 我的博士经费来自于以下两个项目：",
-      "DEFG":"DOE DE-FG02-07ER46417, 2013 - 2019, Structure and Dynamics of Domains in Ferroelectric Nanostructures – Phase-field Modeling",
+  "funding": {
+    "phd": {
+      "description": "我的博士主要研究方向就是铁电材料相场模拟。具体科研项目太多就不列举了，大部分工作发表了论文，可以参考<a href='publications'>我的论文发表</a>。 我的博士经费来自于以下两个项目：",
+      "DEFG": "DOE DE-FG02-07ER46417, 2013 - 2019, Structure and Dynamics of Domains in Ferroelectric Nanostructures – Phase-field Modeling",
       "DESC": "DOE DE-DE-SC0020145, 2019 - 2020, Computational Mesoscale Science and Open Software for Quantum Materials"
     },
-    "undergrad":{
-      "description":"本科参与过众多科研，主要围绕着金属材料展开，不过都没有发表期刊论文。但我参与的生物材料&beta;钛合金研究完成后最终主导写了出版书中的一章，具体参见<a href='publications'>论文中书籍的部分</a>。"
+    "undergrad": {
+      "description": "本科参与过众多科研，主要围绕着金属材料展开，不过都没有发表期刊论文。但我参与的生物材料&beta;钛合金研究完成后最终主导写了出版书中的一章，具体参见<a href='publications'>论文中书籍的部分</a>。"
     }
-    },
+  },
   "education": [
     {
       "id": "psu",
