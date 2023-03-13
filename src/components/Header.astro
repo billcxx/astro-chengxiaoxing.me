@@ -2,34 +2,84 @@
 import { Icon } from "astro-icon";
 ---
 
-<nav
-  class="sticky top-0 z-50 flex items-center justify-between bg-white bg-opacity-95 px-4 py-8"
+<header
+  class="flex-non sticky top-0 z-50 mx-auto w-full transition-all duration-100 ease-in"
 >
-  <a class="w-6" href="/"><Icon name="carbon:home" /></a>
-  <ul
-    class="absolute top-1/2 left-1/2 hidden -translate-y-1/2 -translate-x-1/2 transform lg:mx-auto lg:flex lg:flex lg:w-auto lg:items-center lg:space-x-6"
+  <nav
+    class="flex w-full flex-wrap items-center justify-between bg-white bg-opacity-95 px-4 py-8 md:py-4"
   >
-    <li>
-      <a class="text-xl text-gray-400 hover:text-gray-500" href="/cv"> 简历</a>
-    </li>
+    <div class="home">
+      <a class="w-6" href="/"><Icon name="carbon:home" /></a>
+    </div>
+    <div class="left-0 block md:hidden">
+      <button
+        class="flex items-center rounded border border-white px-3 py-2 text-black hover:border-gray-200 hover:text-gray-500"
+      >
+        <svg
+          class="block h-6 w-6 cursor-pointer md:hidden"
+          id="menu-button"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          ><title>Menu</title><path
+            d="M0 3h20v2H0V3zm0 7h20v2H0v-2zm0 7h20v2H0v-2z"></path></svg
+        >
+      </button>
+    </div>
+    <div class="hidden w-full md:flex md:w-auto md:items-center" id="menu">
+      <ul class="md:flex md:justify-between md:space-x-6 md:pt-0">
+        <li>
+          <a class="text-xl text-gray-400 hover:text-gray-500" href="/cv">
+            简历</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-xl text-gray-400 hover:text-gray-500"
+            href="/publications"
+          >
+            论文
+          </a>
+        </li>
+        <li>
+          <a class="text-xl text-gray-400 hover:text-gray-500" href="/projects">
+            项目
+          </a>
+        </li>
+        <li>
+          <a class="text-xl text-gray-400 hover:text-gray-500" href="/blogs">
+            博客
+          </a>
+        </li>
+        <li class="my-auto">
+          <a
+          class="w-6 text-gray-400 hover:text-gray-500 "
+          href="https://github.com/billcxx/astro-chengxiaoxing.me"
+          >
+            <Icon
+            class="w-6"
+              name="carbon:logo-github"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-    <li>
-      <a class="text-xl text-gray-400 hover:text-gray-500" href="/publications">
-        论文
-      </a>
-    </li>
-    <li>
-      <a class="text-xl text-gray-400 hover:text-gray-500" href="/projects">
-        项目
-      </a>
-    </li>
-    <li>
-      <a class="text-xl text-gray-400 hover:text-gray-500" href="/blogs">
-        博客
-      </a>
-    </li>
-  </ul>
-  <a class="w-6" href="https://github.com/billcxx/astro-chengxiaoxing.me"
-    ><Icon name="carbon:logo-github" /></a
-  >
-</nav>
+<style>
+  .home {
+    @apply flex items-center;
+  }
+  .lg-screen {
+    @apply hidden md:block md:flex-grow;
+  }
+</style>
+
+<script>
+  const button = document.querySelector("#menu-button"); // Hamburger Icon
+  const menu = document.querySelector("#menu"); // Menu
+
+  button.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
