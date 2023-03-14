@@ -3,59 +3,47 @@ import { Icon } from "astro-icon";
 ---
 
 <header
-  class="flex-non sticky top-0 z-50 mx-auto w-full transition-all duration-100 ease-in"
+  class="flex-non sticky top-0 z-50 mx-auto w-full text-5xl transition-all duration-100 ease-in md:text-lg"
 >
   <nav
     class="flex w-full flex-wrap items-center justify-between bg-white bg-opacity-95 px-4 py-8 md:py-4"
   >
     <div class="home">
-      <a class="w-6" href="/"><Icon name="carbon:home" /></a>
+      <a class="w-16 md:w-6" href="/"><Icon name="carbon:home" /></a>
     </div>
     <div class="left-0 block md:hidden">
       <button
-        class="flex items-center rounded border border-white px-3 py-2 text-black hover:border-gray-200 hover:text-gray-500"
+        class=" cursor-pointer items-center rounded border border-white px-3 py-2 text-black hover:border-gray-200 hover:text-gray-500 md:hidden md:w-6"
       >
-        <svg
-          class="block h-6 w-6 cursor-pointer md:hidden"
-          id="menu-button"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><title>Menu</title><path
-            d="M0 3h20v2H0V3zm0 7h20v2H0v-2zm0 7h20v2H0v-2z"></path></svg
-        >
+        <Icon class="w-16" id="menu-button" name="carbon:menu" />
       </button>
     </div>
-    <div class="hidden w-full md:flex md:w-auto md:items-center" id="menu">
-      <ul class="md:flex md:justify-between md:space-x-6 md:pt-0">
+    <div class="hidden w-full md:w-auto md:block" id="menu">
+      <ul
+        class="mx-auto items-center justify-center text-center md:flex md:space-x-6 md:pt-0"
+      >
         <li>
-          <a class="text-xl text-gray-400 hover:text-gray-500" href="/cv">
-            简历</a
-          >
+          <a class="text-gray-400 hover:text-gray-500" href="/cv"> 简历</a>
         </li>
         <li>
-          <a
-            class="text-xl text-gray-400 hover:text-gray-500"
-            href="/publications"
-          >
+          <a class="text-gray-400 hover:text-gray-500" href="/publications">
             论文
           </a>
         </li>
         <li>
-          <a class="text-xl text-gray-400 hover:text-gray-500" href="/projects">
+          <a class="text-gray-400 hover:text-gray-500" href="/projects">
             项目
           </a>
         </li>
         <li>
-          <a class="text-xl text-gray-400 hover:text-gray-500" href="/blogs">
-            博客
-          </a>
+          <a class="text-gray-400 hover:text-gray-500" href="/blogs"> 博客</a>
         </li>
-        <li class="my-auto">
+        <li>
           <a
-            class="w-6 text-gray-400 hover:text-gray-500"
+            class="inline-block md:flex w-12 text-gray-400 hover:text-gray-500 md:w-6"
             href="https://github.com/billcxx/astro-chengxiaoxing.me"
           >
-            <Icon class="w-6" name="carbon:logo-github" />
+            <Icon name="carbon:logo-github" />
           </a>
         </li>
       </ul>
