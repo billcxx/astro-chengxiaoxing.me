@@ -37,6 +37,7 @@ import "../styles/global.css";
 <style>
   :root {
     --accent: 124, 58, 237;
+    --doc-height: 100%;
     --accent-gradient: linear-gradient(
       45deg,
       rgb(var(--accent)),
@@ -55,9 +56,19 @@ import "../styles/global.css";
     width: 100vw;
     margin: auto;
     height: 100vh;
+    height: var(--doc-height);
   }
   .wrapper-class {
     @apply flex min-h-full flex-col justify-between;
     background: rgba(255, 255, 255, 0.5);
   }
 </style>
+
+<script>
+  const documentHeight = () => {
+    const doc = document.documentElement;
+    doc.style.setProperty("--doc-height", `${window.innerHeight}px`);
+  };
+  window.addEventListener("resize", documentHeight);
+  documentHeight();
+</script>
