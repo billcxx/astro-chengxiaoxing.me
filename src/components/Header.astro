@@ -13,12 +13,12 @@ import { Icon } from "astro-icon";
     </div>
     <div class="left-0 block md:hidden">
       <button
-        class=" cursor-pointer items-center rounded border border-white px-3 py-2 text-black hover:border-gray-200 hover:text-gray-500 md:hidden md:w-6"
+        class="cursor-pointer items-center rounded border border-white px-3 py-2 text-black hover:border-gray-200 hover:text-gray-500 md:hidden md:w-6"
       >
         <Icon class="w-16" id="menu-button" name="carbon:menu" />
       </button>
     </div>
-    <div class="hidden w-full md:w-auto md:block" id="menu">
+    <div class="hidden w-full md:block md:w-auto" id="menu">
       <ul
         class="mx-auto items-center justify-center text-center md:flex md:space-x-6 md:pt-0"
       >
@@ -40,7 +40,7 @@ import { Icon } from "astro-icon";
         </li>
         <li>
           <a
-            class="inline-block md:flex w-12 text-gray-400 hover:text-gray-500 md:w-6"
+            class="inline-block w-12 text-gray-400 hover:text-gray-500 md:flex md:w-6"
             href="https://github.com/billcxx/astro-chengxiaoxing.me"
           >
             <Icon name="carbon:logo-github" />
