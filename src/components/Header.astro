@@ -3,19 +3,19 @@ import { Icon } from "astro-icon";
 ---
 
 <header
-  class="flex-non sticky top-0 z-50 mx-auto w-full text-5xl transition-all duration-100 ease-in md:text-lg"
+  class="flex-non sticky top-0 z-50 mx-auto w-full text-xl transition-all duration-100 ease-in"
 >
   <nav
     class="flex w-full flex-wrap items-center justify-between bg-white bg-opacity-95 px-4 py-8 md:py-4"
   >
     <div class="home">
-      <a class="w-16 md:w-6" href="/"><Icon name="carbon:home" /></a>
+      <a class="w-10 md:w-6" href="/"><Icon name="carbon:home" /></a>
     </div>
     <div class="left-0 block md:hidden">
       <button
         class="cursor-pointer items-center rounded border border-white px-3 py-2 text-black hover:border-gray-200 hover:text-gray-500 md:hidden md:w-6"
       >
-        <Icon class="w-16" id="menu-button" name="carbon:menu" />
+        <Icon class="w-10" id="menu-button" name="carbon:menu" />
       </button>
     </div>
     <div class="hidden w-full md:block md:w-auto" id="menu">
@@ -40,7 +40,7 @@ import { Icon } from "astro-icon";
         </li>
         <li>
           <a
-            class="inline-block w-12 text-gray-400 hover:text-gray-500 md:flex md:w-6"
+            class="inline-block w-8 text-gray-400 hover:text-gray-500 md:flex"
             href="https://github.com/billcxx/astro-chengxiaoxing.me"
           >
             <Icon name="carbon:logo-github" />
