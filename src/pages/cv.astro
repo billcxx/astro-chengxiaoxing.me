@@ -78,7 +78,7 @@ import ProjectItem from "@components/projects/ProjectItem.astro";
           {
             cv.languages.map((language) => (
               <tr>
-                <td class="w-40 align-top" align="right">
+                <td class="w-24 break-words align-top md:w-40" align="right">
                   {language.name}
                 </td>
                 <td class="align-top">{language.description}</td>
@@ -95,7 +95,7 @@ import ProjectItem from "@components/projects/ProjectItem.astro";
           {
             cv.softwares.map((software) => (
               <tr>
-                <td class="w-40 align-top" align="right">
+                <td class="w-24 align-top md:w-40" align="right">
                   {software.name}
                 </td>
                 <td class="align-top">{software.description}</td>

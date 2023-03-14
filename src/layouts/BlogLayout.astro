@@ -16,6 +16,7 @@ const { title, headings, tags, publishDate } = Astro.props;
     </article>
     <aside class="aside">
       <nav class="toc">
+        <p class="toc-link mb-0.5 text-center text-base">目录</p>
         <ul class="toc-links">
           {
             Object.values(headings).map((head, index) => (
@@ -32,13 +33,13 @@ const { title, headings, tags, publishDate } = Astro.props;
 
 <style scoped>
   .article-section {
-    @apply grid grid-cols-12;
+    @apply grid grid-cols-12 px-4;
   }
   .aside {
-    @apply col-span-full row-start-1 w-full pt-14 md:col-span-3;
+    @apply col-span-full row-start-1 w-full px-4 pt-4 md:col-span-3 md:px-0 md:pt-24;
   }
   .aside .toc {
-    @apply sticky top-24;
+    @apply sticky top-0 md:top-24;
   }
   .article {
     @apply col-span-full mx-auto w-full max-w-3xl p-4 md:col-span-8 md:col-start-4 md:row-start-1;

@@ -29,7 +29,7 @@ const { posts } = Astro.props;
 ---
 
 <PageLayout title={`Articles tagged with ${tag}`}>
-  <div class="mx-auto max-w-prose">
+  <div class="mx-auto">
     <BlogList articles={posts} path="blogs" />
   </div>
 </PageLayout>
