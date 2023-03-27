@@ -21,3 +21,12 @@ export interface BookType {
   title: string;
   year: string;
 }
+
+interface ImportMetaEnv {
+  readonly SENDGRID_API_KEY=: string;
+  // more env variables...
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}

@@ -1,10 +1,11 @@
 ---
 import { Icon } from "astro-icon";
+import Signup from "@components/signup.astro";
 ---
 
-<footer>
+<footer class="pt-10">
   <div
-    class="text-gray4 prose mx-auto justify-between py-10 text-sm md:flex md:items-center"
+    class="text-gray4 prose mx-auto justify-between py-2 text-sm md:flex md:items-center"
   >
     <div class="flex items-center justify-center text-center">
       <a href="mailto:hello@chengxiaoxing.me" class="mr-2"
@@ -24,8 +25,9 @@ import { Icon } from "astro-icon";
       </a>
     </div>
 
-    <div class="text-center">
-      All rights reserved by Cheng, Xiaoxing &copy; 2023
-    </div>
+    <Signup />
+  </div>
+  <div class="pb-5 text-center">
+    All rights reserved by Cheng, Xiaoxing &copy; 2023
   </div>
 </footer>
