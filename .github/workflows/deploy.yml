@@ -21,6 +21,8 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
       - name: Install, build, and upload your site
+        env:
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
         uses: withastro/action@v0
         # with:
             # path: . # The root location of your Astro project inside the repository. (optional)
