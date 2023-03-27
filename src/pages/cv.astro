@@ -3,11 +3,19 @@ import PageLayout from "@layouts/PageLayout.astro";
 import cv from "@content/cv.json";
 import projects from "@content/projects.json";
 import ProjectItem from "@components/projects/ProjectItem.astro";
+import PublicationItem from "@components/publications/PublicationItem.astro";
 ---
 
 <PageLayout title="">
   <h3>
-    <a href={cv.download.url} download> {cv.download.description}</a>
+    {
+      cv.download.map((item) => (
+        <a href={item.url} download>
+          {" "}
+          <span class="mr-3">{item.description}</span>
+        </a>
+      ))
+    }
   </h3>
   <div>
     <h2>工作经历</h2>
@@ -40,6 +48,16 @@ import ProjectItem from "@components/projects/ProjectItem.astro";
       <ProjectItem project={projects.softwares.ocp} />
       <ProjectItem project={projects.softwares.pfsdk} />
     </ul>
+  </div>
+  <div>
+    <h2>代表性文章</h2>
+    <ol>
+      {
+        cv.highlights.map((journal, index) => (
+          <PublicationItem type="journal" publication={journal} index={index} />
+        ))
+      }
+    </ol>
   </div>
   <div>
     <h2>基金及科研经历</h2>

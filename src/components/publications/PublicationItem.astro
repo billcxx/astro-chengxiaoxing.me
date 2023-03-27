@@ -2,7 +2,7 @@
 import DissertationContent from "@components/publications/DissertationContent.astro";
 import JournalContent from "@components/publications/JournalContent.astro";
 import BookContent from "@components/publications/BookContent.astro";
-import type { DissertationType, JournalType, BookType } from "env.d.ts";
+import type { DissertationType, JournalType, BookType } from "env";
 
 interface dissertation {
   publication: DissertationType;
@@ -33,7 +33,7 @@ const { publication, type, index } = Astro.props;
         <DissertationContent
           author={publication.author}
           year={publication.year}
-          scholi={publication.scholi}
+          scholi={publication.school}
           title={publication.title}
         />
       </li>
@@ -48,6 +48,7 @@ const { publication, type, index } = Astro.props;
           year={publication.year}
           journal={publication.journal}
           title={publication.title}
+          IF={publication.IF}
         />
       </li>
     ) : null

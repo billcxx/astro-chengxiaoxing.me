@@ -13,6 +13,7 @@ export interface JournalType {
   title: string;
   journal: string;
   year: string;
+  IF?: string;
 }
 
 export interface BookType {

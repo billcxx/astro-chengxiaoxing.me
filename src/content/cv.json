@@ -1,12 +1,140 @@
 {
   "title": "Cheng, Xiaoxing CV",
-  "download": {
-    "description": "下载简历，2023/02/24版",
-    "url": "程晓行简历-202302.pdf"
-  },
+  "download": [
+    {
+      "description": "Download English CV",
+      "url": "ChengXiaoxing_CV.pdf"
+    },
+    {
+      "description": "下载中文简历",
+      "url": "程晓行简历.pdf"
+    }
+  ],
   "project": {
     "description": "我的项目经历主要是与物理和材料领域计算机模拟相关，包含建模、编程、可视化、商业化等方向。由于项目较多，这里我只列举两个近期的主要项目，完整列表请参考<a href='projects'>项目页面</a>。"
   },
+  "highlights": [
+    {
+      "title": "The role of lattice dynamics in ferroelectric switching",
+      "journal": "Nature Communications",
+      "year": "2022",
+      "IF": "17.694",
+      "authors": [
+        "Xiaoxing Cheng",
+        "Qiwu Shi",
+        "Eric Parsonnet",
+        "Natalya Fedorova",
+        "Ren-Ci Peng",
+        "Abel Fernandez",
+        "Alexander Qualls",
+        "Xiaoxi Huang",
+        "Xue Chang",
+        "Hongrui Zhang",
+        "David Pesquera",
+        "Sujit Das",
+        "Dmitri Nikonov",
+        "Ian Young",
+        "Long-Qing Chen",
+        "Lane W Martin",
+        "Yen-Lin Huang",
+        "Jorge Íñiguez",
+        "Ramamoorthy Ramesh"
+      ]
+    },
+    {
+      "title": "Domain patterns and super-elasticity of freestanding BiFeO3 membranes via phase-field simulations",
+      "journal": "Acta Materialia",
+      "year": "2021",
+      "IF": "9.209",
+      "authors": [
+        "Xiaoxing Cheng",
+        "Ren-Ci Peng",
+        "Bin Peng",
+        "Ziyao Zhou",
+        "Long-Qing Chen",
+        "Ming Liu"
+      ]
+    },
+    {
+      "title": "Unexpected Giant Microwave Conductivity in a Nominally Silent BiFeO3 Domain Wall",
+      "journal": "Advanced Materials",
+      "year": "2020",
+      "IF": "32.086",
+      "authors": [
+        "Xiaoxing Cheng",
+        "Yen-Lin Huang",
+        "Lu Zheng",
+        "Peng Chen",
+        " Shang-Lin Hsu",
+        "Tiannan Yang",
+        "Xiaoyu Wu",
+        "Louis Ponet",
+        "Ramamoorthy Ramesh",
+        "Long-Qing Chen",
+        "Sergey Artyukhin",
+        "Ying-Hao Chu",
+        "Keji Lai"
+      ]
+    },
+    {
+      "title": "Observation of strong polarization enhancement in ferroelectric tunnel junctions",
+      "journal": "Nano letters",
+      "year": "2019",
+      "IF": "12.262",
+      "authors": [
+        "Linze Li",
+        "Xiaoxing Cheng",
+        "Thomas Blum",
+        "Huaixun Huyan",
+        "Yi Zhang",
+        "Colin Heikes",
+        "Xingxu Yan",
+        "Chaitanya Gadre",
+        "Toshihiro Aoki",
+        "Mingjie Xu",
+        "Lin Xie",
+        "Zijian Hong",
+        "Carolina Adamo",
+        "Darrell G Schlom",
+        "Long-Qing Chen",
+        "Xiaoqing Pan"
+      ]
+    },
+    {
+      "title": "Defect-induced hedgehog polarization states in multiferroics",
+      "journal": "Physical review letters",
+      "year": "2018",
+      "IF": "9.185",
+      "authors": [
+        "Linze Li",
+        "Xiaoxing Cheng",
+        "Jacob R Jokisaari",
+        "Peng Gao",
+        "Jason Britson",
+        "Carolina Adamo",
+        "Colin Heikes",
+        "Darrell G Schlom",
+        "Long-Qing Chen",
+        "Xiaoqing Pan"
+      ]
+    },
+    {
+      "title": "Hierarchical Domain Structure and Extremely Large Wall Current in Epitaxial BiFeO3 Thin Films",
+      "journal": "Advanced Functional Materials",
+      "year": "2018",
+      "IF": "19.924",
+      "authors": [
+        "Zi Long Bai",
+        "Xiao Xing Cheng",
+        "Dong Fang Chen",
+        "David Wei Zhang",
+        "Long-Qing Chen",
+        "James F Scott",
+        "Cheol Seong Hwang",
+        "An Quan Jiang"
+      ]
+    }
+  ],
   "funding": {
     "phd": {
       "description": "我的博士主要研究方向就是铁电材料相场模拟。具体科研项目太多就不列举了，大部分工作发表了论文，可以参考<a href='publications'>我的论文发表</a>。 我的博士经费来自于以下两个项目：",

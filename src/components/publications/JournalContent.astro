@@ -1,8 +1,8 @@
 ---
 import Authors from "@components/publications/Authors.astro";
-import type { JournalType } from "env.d.ts";
+import type { JournalType } from "env";
 export type Props = JournalType;
-const { authors, title, journal, year } = Astro.props;
+const { authors, title, journal, year,IF } = Astro.props;
 ---
 
 <>
@@ -11,5 +11,6 @@ const { authors, title, journal, year } = Astro.props;
   <span class="inline-block font-semibold italic">
     {journal}
   </span>
-  <span>({year})</span>.
+  <span>({year})</span>
+  {IF && <spam>, IF={IF}</spam>}.
 </>
