@@ -45,7 +45,6 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: "./dist/"
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -56,3 +55,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+  cloudflare:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: wrangler
+        run: |
+          CLOUDFLARE_ACCOUNT_ID=${{ secrets.CLOUDFLARE_ACCOUNT_ID }} npx wrangler pages publish dist --project-name chengxiaoxing.me

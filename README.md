@@ -25,3 +25,8 @@ All commands are run from the root of the project, from a terminal:
 pnpm dlx husky-init && pnpm install
 npx husky add .husky/pre-commit 'pnpm prettier && git add -A .'
 ```
+
+```sh
+pnpm install -g wrangler
+CLOUDFLARE_ACCOUNT_ID=xxxx npx wrangler pages publish dist
+```

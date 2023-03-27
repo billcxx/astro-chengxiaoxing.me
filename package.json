@@ -9,11 +9,11 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "deploy": "wrangler pages publish dist",
     "prettier": "prettier --write . ./src/**/*.astro",
     "prepare": "husky install"
   },
   "dependencies": {
-    "@astrojs/image": "^0.15.1",
     "@astrojs/sitemap": "^1.1.0",
     "@astrojs/svelte": "^2.0.2",
     "@astrojs/tailwind": "^3.0.0",
