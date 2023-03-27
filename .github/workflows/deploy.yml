@@ -22,6 +22,16 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7.x.x
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: pnpm
+          cache-dependency-path: "./pnpm-lock.yaml"
       - name: Install, build, and upload your site
       # uses: withastro/action@v0
       # with:
