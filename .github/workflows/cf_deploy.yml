@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy to Cloudflare
 
 on:
   # Trigger the workflow every time you push to the `main` branch
@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - 'frontend/**'
+      - .github/workflows/cf_deploy.yml
     branches: [ main ]
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
@@ -41,9 +42,10 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: astro-dist
+          path: ./frontend/dist
       - name: Publish
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages publish frontend/dist --project-name=chengxiaoxingdotme
+          command: pages publish ./frontend/dist --project-name=chengxiaoxingdotme
