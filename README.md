@@ -28,5 +28,5 @@ npx husky add .husky/pre-commit 'pnpm prettier && git add -A .'
 
 ```sh
 pnpm install -g wrangler
-CLOUDFLARE_ACCOUNT_ID=xxxx npx wrangler pages publish dist
+CLOUDFLARE_ACCOUNT_ID=xxxx pnpm run deploy
 ```
