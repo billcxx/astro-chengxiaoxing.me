@@ -1,7 +1,5 @@
 # My personal website
 
-[![Deploy to GitHub Pages](https://github.com/billcxx/astro-chengxiaoxing.me/actions/workflows/deploy.yml/badge.svg)](https://github.com/billcxx/astro-chengxiaoxing.me/actions/workflows/deploy.yml)
-
 This site is created starting from Astro Starter Kit: Basics
 
 ```
@@ -28,20 +26,10 @@ npx husky add .husky/pre-commit 'pnpm prettier && git add -A .'
 
 ```sh
 pnpm install -g wrangler
-CLOUDFLARE_ACCOUNT_ID=xxxx pnpm run deploy # the page
-```
-
-```sh
-# for the worker
-wrangler secret put SENDGRID_API_KEY --env sendgrid
-wrangler publish
+export CLOUDFLARE_ACCOUNT_ID=xxxx
+pnpm run deploy # the page
 ```
 
 If we want to have SSR with Astro + cloudflare pages and page function, see instructions here https://github.com/natemoo-re/astro-icon/issues/35. I have tried and it works, the only problem is I want the sign up component to be in the footer this will cause every page to be SSR instead of static.
 
 Since my need is very simple, so probably is separate work is easier and more elegant.
-
-```
-export CLOUDFLARE_AUTH_KEY=YOUR_API_KEY_HERE
-export CLOUDFLARE_AUTH_EMAIL=YOUR_CLOUDFLARE_EMAIL
-```
