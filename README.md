@@ -1,32 +1,7 @@
-# My personal website
+# Personal website using Astro + Cloudflare Page + Cloudflare Workers
 
-[![Deploy to GitHub Pages](https://github.com/billcxx/astro-chengxiaoxing.me/actions/workflows/deploy.yml/badge.svg)](https://github.com/billcxx/astro-chengxiaoxing.me/actions/workflows/deploy.yml)
+## Why not GitHub Pages
 
-This site is created starting from Astro Starter Kit: Basics
+The initial version of my website is using GitHub Pages. Then I want to add a serverless function to handle subscription. I use Cloudflare because it's super easy to use.
 
-```
-npm create astro@latest -- --template basics
-```
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command             | Action                                           |
-| :------------------ | :----------------------------------------------- |
-| `pnpm install`      | Installs dependencies                            |
-| `pnpm dev`          | Starts local dev server at `localhost:3000`      |
-| `pnpm build`        | Build your production site to `./dist/`          |
-| `pnpm preview`      | Preview your build locally, before deploying     |
-| `pnpm astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro --help` | Get help using the Astro CLI                     |
-
-```sh
-pnpm dlx husky-init && pnpm install
-npx husky add .husky/pre-commit 'pnpm prettier && git add -A .'
-```
-
-```sh
-pnpm install -g wrangler
-CLOUDFLARE_ACCOUNT_ID=xxxx pnpm run deploy
-```
+##

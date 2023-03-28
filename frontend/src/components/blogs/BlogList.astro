@@ -24,7 +24,7 @@ const { articles, path } = Astro.props;
           </time>
         </p>
         <p>{article.data.description}</p>
-        <Tags tags={article.data.tags} folder="blogs"/>
+        <Tags tags={article.data.tags} folder="blogs" />
       </li>
     ))
   }
@@ -32,7 +32,7 @@ const { articles, path } = Astro.props;
 
 <style>
   .article-list {
-    @apply flex flex-col gap-4 list-none;
+    @apply flex list-none flex-col gap-4;
   }
   .article-item {
     @apply border-t border-slate-200 pl-2 first-of-type:border-none;
@@ -40,5 +40,4 @@ const { articles, path } = Astro.props;
   .article-item a {
     @apply no-underline;
   }
-
 </style>

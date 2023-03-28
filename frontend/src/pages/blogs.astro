@@ -7,6 +7,7 @@ const allPosts = await getCollection("blogs", ({ data }) => {
   return data.draft !== true;
 });
 const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+// export const prerender = true;
 ---
 
 <PageLayout title="">

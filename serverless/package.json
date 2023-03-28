@@ -1,0 +1,15 @@
+{
+  "name": "serverless",
+  "version": "1.0.0",
+  "description": "Cloudflare serverless deployment for self-serve customers",
+  "scripts": {
+    "test": "vitest",
+    "dev": "sls dev",
+    "deploy": "sls deploy"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vitest": "^0.29.7",
+    "serverless-cloudflare-workers": "1.2.0"
+  }
+}

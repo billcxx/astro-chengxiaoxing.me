@@ -1,0 +1,28 @@
+service: serverless
+
+frameworkVersion: "3"
+
+provider:
+  name: cloudflare
+  config:
+    accountId: ${env:CLOUDFLARE_ACCOUNT_ID}
+    zoneId: ${env:CLOUDFLARE_ZONE_ID}
+
+plugins:
+  - serverless-cloudflare-workers
+
+functions:
+  subscribe:
+    name: chengxiaoxing-subscribe
+    script: src/subscribe # there must be a file called helloWorld.js
+    events:
+      - http:
+          url: chengxiaoxing.me/subscribe
+          method: GET
+  helloworld:
+    name: helloworld
+    script: src/helloworld # there must be a file called helloWorld.js
+    events:
+      - http:
+          url: chengxiaoxing.me/helloworld
+          method: GET

@@ -2,6 +2,7 @@
 import BlogList from "@components/blogs/BlogList.astro";
 import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
+export const prerender = true;
 
 export async function getStaticPaths() {
   const allPosts = await Astro.glob("../../../content/blogs/*.md");

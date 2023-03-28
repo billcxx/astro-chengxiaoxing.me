@@ -9,13 +9,11 @@ export async function getStaticPaths() {
   }));
 }
 const { entry } = Astro.props;
+export const prerender = true;
+
 const { Content, headings } = await entry.render();
 ---
 
-<BlogLayout
-  title={entry.data.title}
-  headings={headings}
-  tags={entry.data.tags}
->
+<BlogLayout title={entry.data.title} headings={headings} tags={entry.data.tags}>
   <Content />
 </BlogLayout>

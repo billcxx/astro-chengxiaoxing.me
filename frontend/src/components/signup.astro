@@ -1,0 +1,51 @@
+<div>
+  <form
+    id="subscribe-form"
+    action="https://chengxiaoxing_subscribe.nibirutech.workers.dev"
+    method="get"
+  >
+    <div class="mx-auto flex max-w-sm items-center p-1 pr-0">
+      <input
+        type="email"
+        id="email"
+        placeholder="yourmail@example.com"
+        class="text-grey-dark mr-2 flex-1 appearance-none rounded p-2 shadow focus:outline-none"
+      />
+      <button
+        type="submit"
+        class="rounded-md bg-slate-600 p-2 text-base font-semibold text-white shadow-md hover:bg-indigo-600"
+        >Subscribe</button
+      >
+    </div>
+  </form>
+</div>
+
+<script inline>
+  document
+    .getElementById("subscribe-form")
+    .addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const formData = new FormData(form);
+      // const email = document.getElementById("email").value;
+      const url = new URL(form.action);
+      for (const [key, value] of formData.entries()) {
+        url.searchParams.append(key, value);
+      }
+
+      if (formData.get("email")) {
+        try {
+          const response = await fetch(url);
+
+          if (response.status === 202) {
+            alert("Successfully subscribed!");
+          } else {
+            alert("Failed to subscribe. Please try again.");
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          alert("An error occurred. Please try again later.");
+        }
+      }
+    });
+</script>
