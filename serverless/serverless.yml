@@ -17,12 +17,12 @@ functions:
     script: src/subscribe # there must be a file called helloWorld.js
     events:
       - http:
-          url: chengxiaoxing.me/subscribe
+          url: api.chengxiaoxing.me/subscribe
           method: GET
   helloworld:
     name: helloworld
     script: src/helloworld # there must be a file called helloWorld.js
     events:
       - http:
-          url: chengxiaoxing.me/helloworld
+          url: api.chengxiaoxing.me/helloworld
           method: GET
