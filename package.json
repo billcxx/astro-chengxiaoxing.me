@@ -12,6 +12,7 @@
     "deploy:front": "pnpm --filter frontend run deploy",
     "deploy:serverless": "pnpm --filter serverless run deploy",
     "deploy": "pnpm deploy:front && pnpm deploy:serverless",
+    "set_secret": "wrangler secret put SENDGRID_API_KEY --name chengxiaoxing-subscribe",
     "prettier": "prettier --write . **/*.astro",
     "prepare": "husky install"
   },
