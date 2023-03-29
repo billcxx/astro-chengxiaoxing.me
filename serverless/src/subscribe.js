@@ -10,7 +10,7 @@
 
 async function addContactToSendGrid(request_url) {
   const { searchParams } = new URL(request_url);
-  const email = searchParams.get("email");
+  const email = decodeUIRComponent(searchParams.get("email"));
   console.log(email);
   const apiKey = SENDGRID_API_KEY;
   const url = "https://api.sendgrid.com/v3/marketing/contacts";
