@@ -1,7 +1,7 @@
 <div>
   <form
     id="subscribe-form"
-    action="https://chengxiaoxing_subscribe.nibirutech.workers.dev"
+    action="https://chengxiaoxing.me/subscribe"
     method="get"
   >
     <div class="mx-auto flex max-w-sm items-center p-1 pr-0">
@@ -32,7 +32,7 @@
       for (const [key, value] of formData.entries()) {
         url.searchParams.append(key, value);
       }
-
+      console.log(url);
       if (formData.get("email")) {
         try {
           const response = await fetch(url);
